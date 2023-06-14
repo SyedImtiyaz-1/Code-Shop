@@ -40,10 +40,12 @@ nav:nth-child(2) {
 .sec-2 ul {
     display: flex;
     list-style: none;
+    height: 100%;
+    align-items: center;
 }
 
 .sec-2 ul li {
-    margin: 1.5vh 3vw;
+    margin: 0 3vw;
     color: white;
     font-weight: 600;
 }
