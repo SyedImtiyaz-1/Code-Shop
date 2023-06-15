@@ -286,9 +286,10 @@ footer {
 .f1 {
     width: 50%;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     margin: auto;
     padding: 1vh;
+    justify-content: center;
 }
 
 .f1:nth-child(1){
@@ -296,15 +297,19 @@ footer {
 }
 
 .f2 {
-    width: 95%;
-    display: flex;
+    width: 100%;
     color: white;
     font-size: 1em;
-    margin: 0 6em;
+}
+
+.f2-center{
+    width: 50%;
+    margin: auto;
+    display: flex;
 }
 
 .f2 .f2-sub-1 {
-    width: 49%;
+    width: 50%;
 }
 
 .f2 .f2-sub-1 ul {
@@ -321,7 +326,7 @@ footer {
 } 
 
 .f2 .f2-sub-2 {
-    width: 40%;
+    width: 50%;
 }
 
 .f2 .f2-sub-2 ul {
