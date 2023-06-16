@@ -1,6 +1,9 @@
 * {
     margin: 0;
     padding: 0;
+}
+
+body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -369,4 +372,14 @@ footer {
 
 .s-link a:nth-child(3):hover {
     color: rgb(172, 28, 129);
+}
+
+#copyright{
+    display: flex;
+    font-family:monospace !important;
+    justify-content: center;
+    font-weight: 550;
+    /* text-transform: uppercase; */
+    color: white;
+    padding: 0.5em;
 }
