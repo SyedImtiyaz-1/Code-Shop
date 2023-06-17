@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-body{
+body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -252,7 +252,7 @@ nav:nth-child(2) {
 }
 
 .products-container .products-box img {
-    width: 15vw;
+    width: 15em;
     padding: 20px 50px;
 }
 
@@ -283,7 +283,7 @@ nav:nth-child(2) {
 /* swiper end */
 
 /* mail section */
-section{
+section {
     width: 100%;
     height: 100%;
     display: flex;
@@ -292,14 +292,14 @@ section{
     background: linear-gradient(to left top, rgb(20, 53, 115), rgb(40, 86, 117));
 }
 
-.mail-part-1{
+.mail-part-1 {
     display: flex;
     width: 70%;
     justify-content: center;
     align-items: center;
 }
 
-.mail-part-1 input{
+.mail-part-1 input {
     width: 35vw;
     border-radius: 5px;
     height: 6vh;
@@ -309,7 +309,7 @@ section{
     font-size: medium;
 }
 
-.mail-part-1 button{
+.mail-part-1 button {
     margin: 1em;
     width: 6em;
     height: 4vh;
@@ -318,35 +318,35 @@ section{
     font-size: medium;
 }
 
-.mail-part-1 button:hover{
+.mail-part-1 button:hover {
     background-color: rgb(28, 124, 156);
     color: black;
     transition: 0.3s;
     cursor: pointer;
 }
 
-.mail-part-1 input::placeholder{
+.mail-part-1 input::placeholder {
     font-weight: 600;
     color: #fff;
 }
 
-.mail-part-2{
+.mail-part-2 {
     width: 30%;
     height: 100%;
     text-align: center;
 }
 
-.mail-part-2 img{
+.mail-part-2 img {
     color: darkblue;
     width: 4em;
 }
 
-.mail-part-2 p{
+.mail-part-2 p {
     color: white;
     font-size: 1.3em;
 }
 
-.mail-part-2 p span{
+.mail-part-2 p span {
     border-bottom: 0.5px solid black;
     cursor: pointer;
 }
@@ -367,7 +367,7 @@ footer {
     justify-content: center;
 }
 
-.f1:nth-child(1){
+.f1:nth-child(1) {
     color: white;
 }
 
@@ -377,7 +377,7 @@ footer {
     font-size: 1em;
 }
 
-.f2-center{
+.f2-center {
     width: 50%;
     margin: auto;
     display: flex;
@@ -396,9 +396,9 @@ footer {
     margin: 0.5em 0;
 }
 
-.f2 .f2-sub-1 ul li:hover{
+.f2 .f2-sub-1 ul li:hover {
     cursor: pointer;
-} 
+}
 
 .f2 .f2-sub-2 {
     width: 50%;
@@ -413,9 +413,9 @@ footer {
     margin: 0.5em 0;
 }
 
-.f2 .f2-sub-2 ul li:hover{
+.f2 .f2-sub-2 ul li:hover {
     cursor: pointer;
-} 
+}
 
 /* socials */
 .socials {
@@ -446,12 +446,80 @@ footer {
     color: rgb(172, 28, 129);
 }
 
-#copyright{
+#copyright {
     display: flex;
-    font-family:monospace !important;
+    font-family: monospace !important;
     justify-content: center;
     font-weight: 550;
     /* text-transform: uppercase; */
     color: white;
     padding: 0.5em;
+}
+
+/* Responsive */
+@media only screen and (max-width: 600px) {
+    nav {
+        width: 100%;
+    }
+
+    .sec-1 h3 {
+        width: 50%;
+        float: left;
+        flex-wrap: wrap;
+        font-size: 0.9em;
+    }
+
+    .sec-2 {
+        display: none;
+    }
+
+    .sec-3 {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .sec-3 ul {
+        display: flex;
+        justify-content: center;
+    }
+    .sec-3 li{
+        font-size: 0.8em;
+    }
+
+    /* products */
+
+    .products-container {
+        height: auto;
+        padding: 0
+    }
+
+    .products-box{
+        width: 20vw !important;
+        height: 20vh !important;
+    }
+
+    .products-box:nth-child(4){
+        display: none;
+    }
+
+    .products-box img {
+        width: 3.5em !important;
+        padding: 0.7em 0 !important;
+    }
+
+    .products-box h4 {
+        font-size: 0.6em;
+    }
+
+    .products-box p {
+        font-size: 0.7em;
+    }
+
+    .mail-part-2 p{
+        font-size: 0.8em;
+    }
+
+    .mail-part-1 input{
+        font-size: 0.8em;
+    }
 }
