@@ -315,7 +315,12 @@ section {
     height: 4vh;
     background-color: transparent;
     color: #fff;
-    font-size: medium;
+    font-size: 0.8em;
+    padding: 0.3em;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    display: flex;
 }
 
 .mail-part-1 button:hover {
@@ -398,6 +403,7 @@ footer {
 
 .f2 .f2-sub-1 ul li:hover {
     cursor: pointer;
+    color: rgb(116, 166, 237);
 }
 
 .f2 .f2-sub-2 {
@@ -415,6 +421,7 @@ footer {
 
 .f2 .f2-sub-2 ul li:hover {
     cursor: pointer;
+    color: rgb(116, 166, 237);
 }
 
 /* socials */
@@ -482,29 +489,45 @@ footer {
         display: flex;
         justify-content: center;
     }
-    .sec-3 li{
+
+    .sec-3 li {
         font-size: 0.8em;
     }
 
-    /* products */
+    /* hero sec */
+    .hero-sec img {
+        height: 15em;
+    }
 
+    /* products title */
+    .fontSizeTitle {
+        font-size: 1.2em;
+        margin-bottom: 0.3em;
+    }
+
+    /* scroll arrow */
+    .mouse_scroll {
+        display: none;
+    }
+
+    /* products */
     .products-container {
         height: auto;
         padding: 0
     }
 
-    .products-box{
+    .products-box {
         width: 20vw !important;
         height: 20vh !important;
     }
 
-    .products-box:nth-child(4){
+    .products-box:nth-child(4) {
         display: none;
     }
 
     .products-box img {
-        width: 3.5em !important;
-        padding: 0.7em 0 !important;
+        width: 4em !important;
+        padding: 0.4em 0 !important;
     }
 
     .products-box h4 {
@@ -512,14 +535,44 @@ footer {
     }
 
     .products-box p {
-        font-size: 0.7em;
+        font-size: 0.5em;
     }
 
-    .mail-part-2 p{
+    /* banner */
+    .banner {
+        padding: 0.6em 0 !important;
+    }
+
+    .banner img {
+        height: 20vh;
+    }
+
+    /* mail sec */
+    .mail-part-2 p {
         font-size: 0.8em;
     }
 
-    .mail-part-1 input{
+    .mail-part-1 input {
         font-size: 0.8em;
     }
+
+    .swiper {
+        height: 30vh;
+        margin-top: 2vh;
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    section {
+        margin: 0.5em 0;
+    }
+
+    footer {
+        font-size: 1em;
+    }
+
+    .br{
+        display: none;
+    }
+
 }
