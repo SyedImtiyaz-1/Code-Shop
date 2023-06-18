@@ -29,6 +29,10 @@ mailBtn.addEventListener("click", () => {
     });
   }
 
+  if(window.location.reload()){
+    input.value = " ";
+  }
+
   setTimeout(() => {
     input.placeholder = "Enter your mail";
   }, 600);

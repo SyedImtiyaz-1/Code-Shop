@@ -28,6 +28,11 @@ nav:nth-child(2) {
     cursor: pointer;
 }
 
+.sec-2 ul li a{
+    color: white;
+    text-decoration: none;
+}
+
 .sec-1 h3 {
     display: flex;
     height: 100%;
