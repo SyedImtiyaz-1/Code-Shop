@@ -529,7 +529,8 @@ footer {
 
     .products-box {
         width: 20vw !important;
-        height: 18vh !important;
+        height: auto !important;
+        padding: 0.3em 0;
     }
 
     .products-box:nth-child(4) {
