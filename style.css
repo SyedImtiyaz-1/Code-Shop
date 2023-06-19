@@ -85,6 +85,12 @@ nav:nth-child(2) {
     height: 85vh;
 }
 
+
+/* navigation */
+.nav-mobile{
+    display: none;
+}
+
 /* scroll-down animation */
 
 *,
@@ -481,14 +487,73 @@ footer {
     }
 
     .sec-1 h3 {
-        width: 50%;
         float: left;
         flex-wrap: wrap;
         font-size: 0.9em;
     }
 
-    .sec-2 {
+    .sec-2 ul{
         display: none;
+    }
+
+    .nav-mobile{
+        display: block;
+        transition: 0.5s;
+        height: 100%;
+    }
+
+    .nav-m-block{
+        background-color: rgb(26, 60, 102);
+        height: 100%;
+        z-index: 999;
+        width: 100%;
+        position: fixed;
+    }
+
+    .nav-m-block i{
+        color: white;
+        font-size: 1.7em;
+        display: flex;
+        position: absolute;
+        right: 5.1em;
+        top: .2em;
+        cursor: pointer;
+    }
+
+    .nav-m-block ul{
+        list-style: none;
+    }
+
+    .nav-m-block ul li a{
+        display: inline-block;
+        margin: 3em;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        font-weight: 600;
+    }
+
+    .nav-m-block ul li a:hover{
+        text-decoration: underline;
+    }
+
+
+    .sec-2 .hamburger{
+        display: flex;
+        width: 50%;
+        justify-content: right;
+        height: fit-content;
+        position: absolute;
+        margin: 0;
+    }
+
+    .sec-2 i{
+        display: flex;
+        float: right;
+        font-size: 1.9em;
+        width: auto;
+        margin-right: 0.1em;
+        cursor: pointer;
+        position: absolute;
     }
 
     .sec-3 {

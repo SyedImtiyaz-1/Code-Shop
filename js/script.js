@@ -1,9 +1,11 @@
 let heroSec = document.querySelector("#hero img");
 let scroll = document.querySelector(".mouse_scroll");
-let copyright = document.querySelector("#copyright u");
+let copyright = document.querySelector(".copyright span");
 let input = document.querySelector(".mail-part-1 input");
 let mailBtn = document.querySelector(".mail-part-1 button");
-// let placeholder = document.querySelector(".mail-part-1 input placeholder");
+let openNav = document.querySelector(".open-nav");
+let closeNav = document.querySelector(".close-nav");
+let sideNav = document.querySelector(".nav-mobile");
 
 heroSec.addEventListener("click", function () {
   console.log("I am a click event listener");
@@ -37,3 +39,12 @@ mailBtn.addEventListener("click", () => {
     input.placeholder = "Enter your mail";
   }, 600);
 });
+
+// Navigation for Mobile
+openNav.addEventListener("click", ()=>{
+  sideNav.style.width="200vw";
+})
+
+closeNav.addEventListener("click", ()=>{
+  sideNav.style.width="0px"
+})
