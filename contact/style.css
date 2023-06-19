@@ -131,6 +131,7 @@ main {
 
     .contact-sec-2 input{
         width: 60vw;
+        font-size: 0.9em;
     }
 
     .contact-sec-2 input::placeholder{
