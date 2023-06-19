@@ -25,7 +25,7 @@ nav:nth-child(2) {
     cursor: pointer;
 }
 
-.sec-2 ul li a{
+.sec-2 ul li a {
     color: white;
     text-decoration: none;
 }
@@ -399,7 +399,7 @@ footer {
     text-align: center;
 }
 
-.f2 .f2-sub-1 ul li a{
+.f2 .f2-sub-1 ul li a {
     margin: 0.5em 0;
     color: white;
     text-decoration: none;
@@ -419,7 +419,7 @@ footer {
     text-align: center;
 }
 
-.f2 .f2-sub-2 ul li a{
+.f2 .f2-sub-2 ul li a {
     margin: 0.5em 0;
     color: white;
     text-decoration: none;
@@ -468,7 +468,7 @@ footer {
     padding: 0.5em;
 }
 
-.copyright span{
+.copyright span {
     font-family: monospace !important;
     text-decoration: underline;
     cursor: pointer;
@@ -528,8 +528,8 @@ footer {
     }
 
     .products-box {
-        width: auto !important;
-        height: auto !important;
+        width: 20vw !important;
+        height: 20vh !important;
     }
 
     .products-box:nth-child(4) {
@@ -537,7 +537,7 @@ footer {
     }
 
     .products-box img {
-        width: auto !important;
+        width: 4em !important;
         padding: 0.4em 0 !important;
     }
 
@@ -570,7 +570,7 @@ footer {
     .swiper {
         height: 30vh;
         margin-top: 2vh;
-        width: auto;
+        width: 100%;
         margin-bottom: 0;
     }
 
@@ -582,7 +582,7 @@ footer {
         font-size: 1em;
     }
 
-    .br{
+    .br {
         display: none;
     }
 
