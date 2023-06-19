@@ -550,8 +550,8 @@ footer {
         display: flex;
         margin-top: 1.6px;
         float: right;
-        font-size: 1.8em;
-        width: auto;
+        font-size: 1.7em;
+        /* width: auto; */
         margin-right: 0.1em;
         cursor: pointer;
         position: absolute;
