@@ -1,9 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-}
-
-body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -402,11 +399,13 @@ footer {
     text-align: center;
 }
 
-.f2 .f2-sub-1 ul li {
+.f2 .f2-sub-1 ul li a{
     margin: 0.5em 0;
+    color: white;
+    text-decoration: none;
 }
 
-.f2 .f2-sub-1 ul li:hover {
+.f2 .f2-sub-1 ul li a:hover {
     cursor: pointer;
     color: rgb(116, 166, 237);
 }
@@ -420,11 +419,13 @@ footer {
     text-align: center;
 }
 
-.f2 .f2-sub-2 ul li {
+.f2 .f2-sub-2 ul li a{
     margin: 0.5em 0;
+    color: white;
+    text-decoration: none;
 }
 
-.f2 .f2-sub-2 ul li:hover {
+.f2 .f2-sub-2 ul li a:hover {
     cursor: pointer;
     color: rgb(116, 166, 237);
 }
@@ -458,14 +459,19 @@ footer {
     color: rgb(172, 28, 129);
 }
 
-#copyright {
+.copyright {
     display: flex;
     font-family: monospace !important;
     justify-content: center;
     font-weight: 550;
-    /* text-transform: uppercase; */
     color: white;
     padding: 0.5em;
+}
+
+.copyright span{
+    font-family: monospace !important;
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 /* Responsive */
@@ -522,8 +528,8 @@ footer {
     }
 
     .products-box {
-        width: 20vw !important;
-        height: 20vh !important;
+        width: auto !important;
+        height: auto !important;
     }
 
     .products-box:nth-child(4) {
@@ -531,7 +537,7 @@ footer {
     }
 
     .products-box img {
-        width: 4em !important;
+        width: auto !important;
         padding: 0.4em 0 !important;
     }
 
@@ -564,7 +570,7 @@ footer {
     .swiper {
         height: 30vh;
         margin-top: 2vh;
-        width: 100%;
+        width: auto;
         margin-bottom: 0;
     }
 
