@@ -131,6 +131,13 @@ main {
 
     .contact-sec-2 input{
         width: 60vw;
+    }
+
+    .contact-sec-2 input::placeholder{
+        color: #fff;
+    }
+
+    .contact-sec-2 textarea::placeholder{
         color: white;
     }
 
