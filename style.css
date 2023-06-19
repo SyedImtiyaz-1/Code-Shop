@@ -91,6 +91,10 @@ nav:nth-child(2) {
     display: none;
 }
 
+.sec-2 .hamburger{
+    display: none;
+}
+
 /* scroll-down animation */
 
 *,
@@ -239,6 +243,7 @@ nav:nth-child(2) {
 /* Products */
 .products-container {
     width: 100vw;
+    height: fit-content;
     display: flex;
     justify-content: center;
     padding: 1vh 0;
@@ -247,9 +252,10 @@ nav:nth-child(2) {
 .products-container .products-box {
     border: 1px solid rgb(190, 190, 190);
     width: 15vw;
-    height: 30vh;
+    height: auto;
     text-align: center;
     margin: 0 2vw;
+    padding: 1vh;
 }
 
 .products-container .products-box:hover {
@@ -260,8 +266,11 @@ nav:nth-child(2) {
 }
 
 .products-container .products-box img {
-    width: 18em;
-    padding: 20px 50px;
+    width: 11em;
+    height: auto;
+    background-size: cover;
+    flex-wrap: wrap;
+    padding: 2vh 0;
 }
 
 /* smartwatch - banner */
