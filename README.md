@@ -1,5 +1,5 @@
 <h1 align="center">CodeShop</h1>
-It's a E-commerce Website for **Shopping** developed by myself.
+It's a E-commerce Website for Shopping developed by myself.
 <h3>It's a E-commerce Website for Shopping developed by myself.</h3>
 
 
