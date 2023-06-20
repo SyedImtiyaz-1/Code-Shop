@@ -522,11 +522,13 @@ footer {
     }
 
     .nav-m-block i{
+
         color: white;
         font-size: 1.7em;
         display: flex;
         position: absolute;
         right: 6em;
+        flex-wrap: wrap;
         top: .2em;
         cursor: pointer;
     }
