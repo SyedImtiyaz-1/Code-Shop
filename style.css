@@ -561,9 +561,10 @@ footer {
 
     .sec-2 i{
         display: flex;
+        align-items: center;
         margin-top: 1.6px;
         float: right;
-        font-size: 1.7em;
+        font-size: 1.8em;
         /* width: auto; */
         margin-right: 0.1em;
         cursor: pointer;
