@@ -4,6 +4,10 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+body{
+    overflow-x : hidden;
+}
+
 nav {
     display: flex;
     height: 5vh;
