@@ -267,6 +267,8 @@ nav:nth-child(2) {
     text-align: center;
     margin: 0 2vw;
     padding: 1vh;
+    text-decoration: none;
+    color: black;
 }
 
 .products-container .products-box:hover {
@@ -275,6 +277,7 @@ nav:nth-child(2) {
     transition: 0.2s;
 
 }
+
 
 .products-container .products-box img {
     width: 11em;
