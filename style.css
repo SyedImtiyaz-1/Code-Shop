@@ -6,12 +6,12 @@
     box-sizing: border-box;
 }
 
-:root{
+:root {
     --mail-part-1-input-height: 6vh;
 }
 
-body{
-    overflow-x : hidden;
+body {
+    overflow-x: hidden;
 }
 
 nav {
@@ -98,11 +98,11 @@ nav:nth-child(2) {
 
 
 /* navigation */
-.nav-mobile{
+.nav-mobile {
     display: none;
 }
 
-.sec-2 .hamburger{
+.sec-2 .hamburger {
     display: none;
 }
 
@@ -510,6 +510,7 @@ footer {
         width: -webkit-fill-available;
     }
 }
+
 @media only screen and (max-width: 600px) {
     nav {
         width: 100%;
@@ -523,17 +524,17 @@ footer {
         padding: .5em;
     }
 
-    .sec-2 ul{
+    .sec-2 ul {
         display: none;
     }
 
-    .nav-mobile{
+    .nav-mobile {
         display: block;
         transition: 0.5s;
         height: 100%;
     }
 
-    .nav-m-block{
+    .nav-m-block {
         background-color: rgb(26, 60, 102);
         height: 100%;
         z-index: 999;
@@ -541,7 +542,7 @@ footer {
         position: fixed;
     }
 
-    .nav-m-block i{
+    .nav-m-block i {
 
         color: white;
         font-size: 1.7em;
@@ -553,11 +554,11 @@ footer {
         cursor: pointer;
     }
 
-    .nav-m-block ul{
+    .nav-m-block ul {
         list-style: none;
     }
 
-    .nav-m-block ul li a{
+    .nav-m-block ul li a {
         display: inline-block;
         margin: 3em;
         text-decoration: none;
@@ -565,12 +566,12 @@ footer {
         font-weight: 600;
     }
 
-    .nav-m-block ul li a:hover{
+    .nav-m-block ul li a:hover {
         text-decoration: underline;
     }
 
 
-    .sec-2 .hamburger{
+    .sec-2 .hamburger {
         display: flex;
         width: 50%;
         justify-content: right;
@@ -579,7 +580,7 @@ footer {
         margin: 0;
     }
 
-    .sec-2 i{
+    .sec-2 i {
         display: flex;
         align-items: center;
         margin-top: 1.6px;
@@ -627,7 +628,8 @@ footer {
         height: auto;
         padding: 0
     }
-    .products-container .products-box img{
+
+    .products-container .products-box img {
         width: 11em;
     }
 
@@ -693,4 +695,25 @@ footer {
         display: none;
     }
 
+}
+
+/* Scroll to top button style */
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #47b5ff;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+#myBtn:hover {
+    background-color: #555;
 }
