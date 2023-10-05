@@ -1,173 +1,593 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Meta Description -->
+    <meta name="description"
+        content="Discover chemical-free beauty products, stylish shoes, and innovative gadgets in our online store. Shop with confidence and quality!">
+    <!-- Meta Keywords -->
+    <meta name="keywords"
+        content="beauty products, quality shoes, innovative gadgets, online shopping, Smartphones, Clothes, Kids">
+    <!-- Meta Tags Open Graph (OG Tags) -->
+    <meta property="og:title" content="Quality Beauty, Shoes, and Gadgets Store - Your Store Name">
+    <meta property="og:description"
+        content="Discover chemical-free beauty products, stylish shoes, and innovative gadgets in our online store. Shop with confidence and quality!">
+    <meta property="og:image" content="https://ourcodeshop.vercel.app/images/banner-products/iphone.png">
+    <meta property="og:url" content="https://ourcodeshop.vercel.app/">
+    <!-- Meta Tags Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Quality Beauty, Shoes, and Gadgets Store - Your Store Name">
+    <meta name="twitter:description"
+        content="Discover chemical-free beauty products, stylish shoes, and innovative gadgets in our online store. Shop with confidence and quality!">
+    <meta name="twitter:image" content="https://ourcodeshop.vercel.app/images/banner-products/iphone.png">
+
+    <!-- Fav Icon -->
+    <link rel="icon" href="images/logo.png" type="image/gif" sizes="16x16">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- Main css -->
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-    <title>codeShop</title>
+    <title>HOT GADGETS</title>
 </head>
 
 <body>
-    <nav>
-        <div class="sec-1">
-            <a href="index.html"><h3><span>Code</span>Shop</h3></a>
-        </div>
-        <div class="sec-2">
-            <ul>
-                <li>Home</li>
-                <li><a href="../about/index.html"> About</a></li>
-                <li><a href="./contact/index.html">Contact</a></li>
-                <li>Service</li>
-            </ul>
-            <div class="hamburger">
-                <i class="fa-solid fa-bars open-nav" style="color: #ffffff;"></i>
-            </div>
-        </div>
-        <!-- navigation width pop-up -->
-        <div class="nav-mobile">
-            <div class="nav-m-block">
-                <i class="fa-solid fa-xmark close-nav"></i>
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="./about/index.html">About</a></li>
-                    <li><a href="./contact/index.html">Contact</a></li>
-                    <li><a href="">Service</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <nav>
-        <div class="sec-3">
-            <ul>
-                <li>MEN</li>
-                <li>WOMEN</li>
-                <li>KIDS</li>
-                <li>ACCESSORIES</li>
-                <li>UNISEX</li>
-            </ul>
-        </div>
-    </nav>
+    <main class="container">
+        <!-- Header start -->
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light fill">
+                <a class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-    <div class="hero-sec" id="hero">
-        <img src="images/Blue Dynamic Fashion Special Sale Banner(1).png" alt="">
-    </div>
-
-    <!-- scroll-down animation -->
-    <div class="mouse_scroll">
-        <div>
-            <span class="m_scroll_arrows unu"></span>
-            <span class="m_scroll_arrows doi"></span>
-            <span class="m_scroll_arrows trei"></span>
-        </div>
-    </div>
-    <!-- scroll down ani.. end -->
-
-    
-    <!-- Tshirts (product) -->
-    <div id="tshirt-products">
-        <!-- Generated by javascript -->
-    </div>
-
-    <!-- smartwatch-banner -->
-    <div class="banner">
-        <img src="images/smartwatch-banner.png" alt="">
-        <img src="images/mobile-banner.png" alt="">
-    </div>
-
-    <!-- Smartwatch (product) -->
-    <div id="smartwatch-products">
-        <!-- Generated by javascript -->
-    </div>
-
-    <!-- breaks -->
-    <br class="br">
-    <br class="br">
-
-    <!-- Mobile Phones  (product) -->
-    <div id="mobile-phone-products">
-        <!-- Generated by javascript -->
-    </div>
-
-    <!-- Suggestion: use images with same height and width then remove the height settings in swiper's css. This will improve consistency in UI and eliminate the stretched image problem you see now. -->
-    <!-- Swiper -->
-    <div class="swiper">
-        <!-- Additional required wrapper -->
-        <div id="bottom-swiper-wrapper" class="swiper-wrapper">
-            <!-- Slides -->
-            <!-- Generated by javascript -->
-        </div>
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
-
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-
-        <!-- If we need scrollbar -->
-        <div class="swiper-scrollbar"></div>
-    </div>
-    <!-- swiper end -->
-
-    <section>
-        <div class="mail-part-1">
-            <input type="email" placeholder="Enter your mail">
-            <button>Subscribe</button>
-        </div>
-
-        <div class="mail-part-2">
-            <img src="./images/envelope.png" alt="">
-            <p>&ggg; <span>Subscribe</span> to get updates to your inbox</p>
-        </div>
-    </section>
-
-    <!-- footer -->
-    <footer>
-        <div class="f1 sec-1">
-            <h3><span>Code</span>Shop</h3>
-        </div>
-        <div class="f2">
-            <div class="f2-center">
-                <div class="f2-sub-1">
-                    <ul>
-                        <li><a href="../index.html">Home</a></li>
-                        <li><a href="../about/index.html">About</a></li>
-                        <li><a href="../contact/index.html">Contact Us</a></li>
-                        <li><a href="#">Support</a></li>
-                        <li><a href="#">Helpline</a></li>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#smartphone">Smartphone</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#MenTshirt">Men</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#WomanMenTshirt">Women</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#Kids">Kids</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#About">About Us</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#contact">Contact Us</a>
+                        </li>
                     </ul>
                 </div>
-                <div class="f2-sub-2">
-                    <ul>
-                        <li><a href="">CodeShop Plus</a></li>
-                        <li><a href="">Careers</a></li>
-                        <li><a href="">Sponsors</a></li>
-                    </ul>
+            </nav>
+        </header>
+        <!-- Header end -->
+
+        <!-- Mack book pro start -->
+
+        <section id="mack-book">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-6 mack">
+                                <h1>Iphone 15 Pro</h1>
+                                <p>Both models are 0.31 inches (7.80 mm) thick, with the iPhone 15 weighing 6.02
+                                    ounces (171 grams) and the iPhone 15 Plus weighing 7.09 ounces (201 grams).
+                                    The iPhone 15 models feature an all-glass front and a colorful, matte glass
+                                    back that is framed by a color-matched aerospace-grade aluminum frame.</p>
+                                <a class="mack-btn">Buy Now
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right"
+                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M10.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L12.793 8l-2.647-2.646a.5.5 0 0 1 0-.708z" />
+                                        <path fill-rule="evenodd"
+                                            d="M2 8a.5.5 0 0 1 .5-.5H13a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8z" />
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="col-md-6">
+                                <img src="images/banner-products/iphone.png" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-6 mack">
+                                <h2>Alexa</h2>
+                                <p>Alexa is the intelligent cloud-based voice AI that you can talk to on [your product].
+                                    Speak to Alexa through [your product] to play music, hear the news, check weather,
+                                    control smart home devices, and more.</p>
+                                <a class="mack-btn">Buy Now
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right"
+                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M10.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L12.793 8l-2.647-2.646a.5.5 0 0 1 0-.708z" />
+                                        <path fill-rule="evenodd"
+                                            d="M2 8a.5.5 0 0 1 .5-.5H13a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8z" />
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="col-md-6">
+                                <img src="images/banner-products/slider-1.png" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-6 mack">
+                                <h2>Apple Smartwatch</h2>
+                                <p>Apple Watch is a wearable smartwatch that allows users to accomplish a variety of
+                                    tasks, including making phone calls, sending text messages and reading email.</p>
+                                <a class="mack-btn">Buy Now
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right"
+                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M10.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L12.793 8l-2.647-2.646a.5.5 0 0 1 0-.708z" />
+                                        <path fill-rule="evenodd"
+                                            d="M2 8a.5.5 0 0 1 .5-.5H13a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8z" />
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="col-md-6">
+                                <img src="images/banner-products/smartwatch.png" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="socials">
-            <div class="s-link">
-                <a href="mailto:syedimtiyazali141@gmail.com"><i class="fa-brands fa-google"></i></a>
-                <a href="https://linkedin.com/in/imtiyaz-sde"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="https://github.com/SyedImtiyaz-1"><i class="fa-brands fa-github"></i></a>
+        </section>
+        <!-- End -->
+
+        <!-- Smart Phone start -->
+        <section id="smartphone">
+            <div class="container">
+                <div class="smartphone-header">
+                    <div class="row">
+                        <div class="col-md-6">
+                          
+                            <h2>SmartPhones</h2>
+
+                        </div>
+                        <div class="col-md-6 text-right">
+                            <h5>See All</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center card-hover">
+                    <div class="col-md-4">
+                        <div class="card text-center" style="width: 18rem;border:none;">
+                            <img src="images/phone/phone-2.png" class="card-img-top" alt="image not found">
+                            <div class="card-body">
+                                <h5 class="card-title"><b>iPhone 11 pro</b></h5>
+                                <p class="card-text">All new textured matt glass finished, super retina XDR display.
+                                    12MP triple cam,120°field view. </p>
+                                <h5><b>$1460</b></h5>
+                                <a href="#" class="btn smartphone-btn">BUY NOW
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right"
+                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M10.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L12.793 8l-2.647-2.646a.5.5 0 0 1 0-.708z" />
+                                        <path fill-rule="evenodd"
+                                            d="M2 8a.5.5 0 0 1 .5-.5H13a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card text-center" style="width: 18rem;border:none;">
+                            <img src="images/phone/phone-3.png" class="card-img-top" alt="image not found">
+                            <div class="card-body">
+                                <h5 class="card-title"><b>Samsung Galaxy Note10+</b></h5>
+                                <p class="card-text">Dynamic AMOLED 6.8" display. 12MP Quad cam, high-end video stabilisation.
+                                   S-Pen included.</p>
+                                <h5><b>$660</b></h5>
+                                <a href="#" class="btn smartphone-btn">BUY NOW
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right"
+                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M10.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L12.793 8l-2.647-2.646a.5.5 0 0 1 0-.708z" />
+                                        <path fill-rule="evenodd"
+                                            d="M2 8a.5.5 0 0 1 .5-.5H13a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card text-center" style="width: 18rem;border:none;">
+                            <img src="images/phone/phone-1.png" class="card-img-top" alt="image not found">
+                            <div class="card-body">
+                                <h5 class="card-title"><b>Redmi Note 8</b></h5>
+                                <p class="card-text">6.3" FHD display with 48MP quad cam.
+                                   Qualcom Snapdragon 655 processor.</p>
+                                <h5><b>$150</b></h5>
+                                <a href="#" class="btn smartphone-btn">BUY NOW
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right"
+                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M10.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L12.793 8l-2.647-2.646a.5.5 0 0 1 0-.708z" />
+                                        <path fill-rule="evenodd"
+                                            d="M2 8a.5.5 0 0 1 .5-.5H13a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
+        <!-- End -->
+        <!-- Men Tshirts -->
+        <section id="MenTshirt">
+            <div class="container">
+                <div class="laptop-header">
+                    <div class="row">
+                        <div class="col-md-6">
 
-        <!-- developer's mention -->
-        <p class="copyright">Made with ❤️ by&nbsp;<span>Imtiyaz</span> </p>
-    </footer>
+                            <h2>Men Tshirts</h2>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="./js/swipper.js"></script>
-    <script type="module" src="./js/script.js"></script>
+                        </div>
+                        <div class="col-md-6 text-right">
+                            <h5>See All</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center card-hover">
+                    <div class="col-md-4">
+                        <div class="card text-center" style="width: 18rem;border:none;">
+                            <img src="images/laptop/react.png" class="card-img-top" alt="image not found">
+                            <div class="card-body">
+                                <h5 class="card-title"><b>ReactJS T-Shirt</b></h5>
+                                <p class="card-text">Vintage ReactJS, Classic T-Shirt</p>
+                                <h5><b>$22.12</b></h5>
+                                <a href="#" class="btn laptop-btn">BUY NOW
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right"
+                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M10.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L12.793 8l-2.647-2.646a.5.5 0 0 1 0-.708z" />
+                                        <path fill-rule="evenodd"
+                                            d="M2 8a.5.5 0 0 1 .5-.5H13a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card text-center" style="width: 18rem;border:none;">
+                            <img src="images/laptop/angular.png" class="card-img-top" alt="image not found">
+                            <div class="card-body">
 
+                                <h5 class="card-title"><b>Angular Tshirt</b></h5>
+                                <p class="card-text">A Tshirt with a angular logo attached to it. Meant for developers
+                                </p>
+                                <h5><b>$27</b></h5>
+                                <a href="#" class="btn laptop-btn">BUY NOW
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right"
+                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M10.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L12.793 8l-2.647-2.646a.5.5 0 0 1 0-.708z" />
+                                        <path fill-rule="evenodd"
+                                            d="M2 8a.5.5 0 0 1 .5-.5H13a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card text-center" style="width: 18rem;border:none;">
+                            <img src="images/laptop/nodejs.png" class="card-img-top" alt="image not found">
+                            <div class="card-body">
+                                <h5 class="card-title"><b>Node Js Tshirt</b></h5>
+
+                                <p class="card-text">A Tshirt with a Node Js logo attached to it. Meant for developers
+                                </p>
+                                <h5><b>$30</b></h5>
+
+                                <a href="#" class="btn laptop-btn">BUY NOW
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right"
+                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M10.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L12.793 8l-2.647-2.646a.5.5 0 0 1 0-.708z" />
+                                        <path fill-rule="evenodd"
+                                            d="M2 8a.5.5 0 0 1 .5-.5H13a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Woman Jacket start -->
+        <br><br><br><br>
+
+        <section id="WomanMenTshirt">
+            <div class="container">
+                <div class="laptop-header">
+                    <div class="row">
+                        <div class="col-md-6">
+
+                            <h2>Woman Jackets</h2>
+
+                        </div>
+                        <div class="col-md-6 text-right">
+                            <h5>See All</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center card-hover">
+                    <div class="col-md-4">
+                        <div class="card text-center" style="width: 18rem;border:none;">
+                            <img src="images/laptop/public.avif" class="card-img-top" alt="image not found">
+                            <div class="card-body">
+                                <h5 class="card-title"><b>Belted Jacket Beige</b></h5>
+                                <p class="card-text">Snow And Water Resistant With Fur Layer Inside</p>
+                                <h5><b>$61.29</b></h5>
+                                <a href="#" class="btn laptop-btn">BUY NOW
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right"
+                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M10.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L12.793 8l-2.647-2.646a.5.5 0 0 1 0-.708z" />
+                                        <path fill-rule="evenodd"
+                                            d="M2 8a.5.5 0 0 1 .5-.5H13a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card text-center" style="width: 18rem;border:none;">
+                            <img src="images/laptop/sweater.jpg" class="card-img-top" alt="image not found">
+                            <div class="card-body">
+                                <h5 class="card-title"><b>Ladies "Lydia" Parka</b></h5>
+                                <p class="card-text">Soft, Padded, Quilted Coat. Winter wear</p>
+                                <h5><b>$144</b></h5>
+                                <a href="#" class="btn laptop-btn">BUY NOW
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right"
+                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M10.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L12.793 8l-2.647-2.646a.5.5 0 0 1 0-.708z" />
+                                        <path fill-rule="evenodd"
+                                            d="M2 8a.5.5 0 0 1 .5-.5H13a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card text-center" style="width: 18rem;border:none;">
+                            <img src="images/laptop/images.png" class="card-img-top" alt="image not found">
+                            <div class="card-body">
+                                <h5 class="card-title"><b>Black Hooded</b></h5>
+                                <p class="card-text">Casual, Puffer, Regular Fit Bomber Jacket</p>
+                                <h5><b>$20</b></h5>
+                                <a href="#" class="btn laptop-btn">BUY NOW
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right"
+                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M10.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L12.793 8l-2.647-2.646a.5.5 0 0 1 0-.708z" />
+                                        <path fill-rule="evenodd"
+                                            d="M2 8a.5.5 0 0 1 .5-.5H13a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kids Section -->
+        <br><br><br><br>
+        <section id="Kids">
+            <div class="container">
+                <div class="laptop-header">
+                    <div class="row">
+                        <div class="col-md-6">
+
+                            <h2>Kids Section</h2>
+
+                        </div>
+                        <div class="col-md-6 text-right">
+                            <h5>See All</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center card-hover">
+                    <div class="col-md-4">
+                        <div class="card text-center" style="width: 18rem;border:none;">
+                            <img src="images/laptop/ktshirt.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title"><b>Kid's Solid</b></h5>
+                                <p class="card-text">Navy Blue solid t-shirt.(6-8 yrs)</p>
+                                <h5><b>$18</b></h5>
+                                <a href="#" class="btn laptop-btn">BUY NOW
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right"
+                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M10.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L12.793 8l-2.647-2.646a.5.5 0 0 1 0-.708z" />
+                                        <path fill-rule="evenodd"
+                                            d="M2 8a.5.5 0 0 1 .5-.5H13a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card text-center" style="width: 18rem;border:none;">
+                            <img src="images/laptop/ktshirt2.jpg" class="card-img-top" alt="image not found">
+                            <div class="card-body">
+                                <h5 class="card-title"><b>Kids Striped</b></h5>
+                                <p class="card-text">Red/White horizontal striped.(5-6 yrs)</p>
+                                <h5><b>$14</b></h5>
+                                <a href="#" class="btn laptop-btn">BUY NOW
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right"
+                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M10.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L12.793 8l-2.647-2.646a.5.5 0 0 1 0-.708z" />
+                                        <path fill-rule="evenodd"
+                                            d="M2 8a.5.5 0 0 1 .5-.5H13a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card text-center" style="width: 18rem;border:none;">
+                            <img src="images/laptop/ktshirt3.jpg" class="card-img-top" alt="image not found">
+                            <div class="card-body">
+                                <h5 class="card-title"><b>Kid's Striped</b></h5>
+                                <p class="card-text">Blue/Yellow Striped.(9-11 yrs)</p>
+                                <h5><b>$20</b></h5>
+                                <a href="#" class="btn laptop-btn">BUY NOW
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right"
+                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd"
+                                            d="M10.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L12.793 8l-2.647-2.646a.5.5 0 0 1 0-.708z" />
+                                        <path fill-rule="evenodd"
+                                            d="M2 8a.5.5 0 0 1 .5-.5H13a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br><br><br><br>
+        <!-- End -->
+
+        <!--About Us-->
+        <section id="About">
+            <div class="container">
+                <div class="laptop-header">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h2>About Us</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-4">
+                        <div class="card text-center" style="width: 18rem;border:none;">
+                            <div class="card-body">
+                                <h5 class="card-title"><b>Who we are</b></h5>
+                                <p class="card-text">We believe in quality over quantity. Our products are fine
+                                    developed with no harmful chemicals. We have our product sales going on well
+                                    for years. Do come up and shop with us and have a look over our products.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <br><br><br><br>
+        <!-- Categories Start -->
+
+        <section id="categories">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-md-12">
+                        <h2>Categories</h2>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-3 mt-5 mb-5">
+                        <div class="categories-card">
+                            <img src="images/Categories/bag.png" alt="" class="img-fluid">
+                            <h2>Bag</h2>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="categories-card mb-5">
+                            <img src="images/Categories/perfume.png" alt="" class="img-fluid">
+                            <h2>Beauty</h2>
+                        </div>
+                        <div class="categories-card mb-5">
+                            <img src="images/Categories/shoe.png" alt="" class="img-fluid">
+                            <h2>Shoes</h2>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="col-md-6">
+                        <img src="images/Categories/pale-order.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br><br><br>
+        <!--Contact form-->
+        <section class="contact-form" id="contact">
+            <div class="container">
+                <div class="laptop-header">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h2>Contact us</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-container">
+                    <h2>Your Details</h2>
+                    <form action="#" method="POST">
+                        <label for="name">Name: </label>
+                        <input type="text" id="name" name="name" required>
+                        <label for="email">Email: </label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="phone">Phone: </label>
+                        <input type="tel" id="phone" name="phone">
+                        <label for="message">Message: </label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                        <button type="submit" class="submit-button">Submit</button>
+                    </form>
+                </div>
+        </section>
+        <!-- End -->
+
+        <!-- Footer start -->
+        <footer>
+            <div class="text-center">
+                <strong>Code Shop</strong> &copy; All Right reserved
+            </div>
+        </footer>
+        <!-- End -->
+    </main>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
 </body>
-
 </html>
+
