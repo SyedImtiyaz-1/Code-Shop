@@ -122,8 +122,12 @@ a.mack-btn:hover svg.bi.bi-arrow-right{
 
 /* section Smart phone start  */
 
-section#smartphone{
+section#smartphone {
     margin-bottom: 100px;
+}
+
+.card-hover :hover{
+    transform: scale(1.05);
 }
 
 .smartphone-header{
