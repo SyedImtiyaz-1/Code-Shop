@@ -2,21 +2,17 @@ const swiper = new Swiper('.swiper', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
-  
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
+    autoplay: {
+      delay: 1000, // Delay between slides (in milliseconds
     },
-  
     // Navigation arrows
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-  
-    // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
+    autoplay: {
+      delay: 1000, // Delay between slides (in milliseconds)
+      disableOnInteraction: false, // Prevent autoplay from stopping on user interaction
     },
   });
 
