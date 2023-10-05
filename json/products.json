@@ -1,0 +1,122 @@
+[
+  {
+    "type": "tshirts",
+    "products": [
+      {
+        "name": "React T-shirt",
+        "link": "#",
+        "imageSource": "../images/react-tshirt.jpg",
+        "price": "20",
+        "priceCurrency": "$"
+      },
+      {
+        "name": "React T-shirt",
+        "link": "#",
+        "imageSource": "../images/react-tshirt.jpg",
+        "price": "20",
+        "priceCurrency": "$"
+      },
+      {
+        "name": "React T-shirt",
+        "link": "#",
+        "imageSource": "../images/react-tshirt.jpg",
+        "price": "20",
+        "priceCurrency": "$"
+      },
+      {
+        "name": "React T-shirt",
+        "link": "#",
+        "imageSource": "../images/react-tshirt.jpg",
+        "price": "20",
+        "priceCurrency": "$"
+      },
+      {
+        "name": "React T-shirt",
+        "link": "#",
+        "imageSource": "../images/react-tshirt.jpg",
+        "price": "20",
+        "priceCurrency": "$"
+      }
+    ]
+  },
+  {
+    "type": "smartwatch",
+    "products": [
+      {
+        "name": "Noise Smartwatch",
+        "link": "#",
+        "imageSource": "../images/smartwatch.png",
+        "price": "20",
+        "priceCurrency": "$"
+      },
+      {
+        "name": "Noise Smartwatch",
+        "link": "#",
+        "imageSource": "../images/smartwatch.png",
+        "price": "20",
+        "priceCurrency": "$"
+      },
+      {
+        "name": "Noise Smartwatch",
+        "link": "#",
+        "imageSource": "../images/smartwatch.png",
+        "price": "20",
+        "priceCurrency": "$"
+      },
+      {
+        "name": "Noise Smartwatch",
+        "link": "#",
+        "imageSource": "../images/smartwatch.png",
+        "price": "20",
+        "priceCurrency": "$"
+      },
+      {
+        "name": "Noise Smartwatch",
+        "link": "#",
+        "imageSource": "../images/smartwatch.png",
+        "price": "20",
+        "priceCurrency": "$"
+      }
+    ]
+  },
+  {
+    "type": "mobile phones",
+    "products": [
+      {
+        "name": "Iphone 14 Pro Max",
+        "link": "#",
+        "imageSource": "../images/iphone_.jpg",
+        "price": "20",
+        "priceCurrency": "$"
+      },
+      {
+        "name": "Iphone 14 Pro Max",
+        "link": "#",
+        "imageSource": "../images/iphone_.jpg",
+        "price": "20",
+        "priceCurrency": "$"
+      },
+      {
+        "name": "Iphone 14 Pro Max",
+        "link": "#",
+        "imageSource": "../images/iphone_.jpg",
+        "price": "20",
+        "priceCurrency": "$"
+      },
+      {
+        "name": "Iphone 14 Pro Max",
+        "link": "#",
+        "imageSource": "../images/iphone_.jpg",
+        "price": "20",
+        "priceCurrency": "$"
+      },
+      {
+        "name": "Iphone 14 Pro Max",
+        "link": "#",
+        "imageSource": "../images/iphone_.jpg",
+        "price": "20",
+        "priceCurrency": "$"
+      }
+    ]
+  }
+]
