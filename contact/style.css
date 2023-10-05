@@ -59,9 +59,9 @@ main {
 }
 
 .contact-sec-2 button{
-    width: 5.5vw;
-    font-size: 1em;
-    height: 4vh;
+    padding: 0.7rem 1rem;
+    width: 6rem;
+    font-size: 1.3rem;
     background-color: transparent;
     color: white;
     font-weight: 600;
@@ -81,7 +81,80 @@ main {
 }
 
 
-/* responsive */
+/*? Responsive */
+
+/** Tablet  */
+@media only screen and (max-width:1024px) {
+    body{
+        width: 100%;
+        height: auto;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    .sec-1 h3 {
+        width: 50%;
+        float: left;
+        flex-wrap: wrap;
+        font-size: 0.9em;
+    }
+
+    .sec-2 {
+        display: none;
+    }
+
+    main{
+        height: 1000%;
+        margin: 0.2vh 0;
+    }
+
+    .contact-box{
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-sec-1{
+        width: 100%;
+    }
+    .contact-sec-1 img{
+        width: 50vw;
+        display: flex;
+        margin: auto;
+    }
+
+    .contact-sec-2{
+        width: 100%;
+    }
+
+    .contact-sec-2 h1{
+        font-size: 2em;
+    }
+
+    .contact-sec-2 input{
+        width: 60vw;
+        font-size: 0.9em;
+    }
+
+    .contact-sec-2 input::placeholder{
+        color: #fff;
+    }
+
+    .contact-sec-2 textarea::placeholder{
+        color: white;
+    }
+
+    .contact-sec-2 textarea{
+        width: 70vw;
+    }
+
+    .contact-sec-2 button{
+        width: 30vw;
+        height: 5vh;
+        margin: 1.5vh 0;
+    }
+}
+/** Mobile */
 @media only screen and (max-width:600px){
     body{
         width: 100%;
