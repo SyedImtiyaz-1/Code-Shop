@@ -260,7 +260,7 @@ footer {
 }
  
 .form-container {
-    max-width: 40%;
+    max-width: 55%;
     margin: 0 auto;
     padding: 20px;
     background-color: #ffffff;
@@ -298,4 +298,38 @@ footer {
     font-size: 1rem;
     cursor: pointer;
 }
+/* added css to correct the view of contact form for different devices */
+@media (min-width: 1200px){
+    .form-container{
+        min-width: 40%;
+    }
+}
+@media (min-width: 992px)and (max-width:1200px){
+    .form-container{
+        min-width: 55%;
+    }
+}
+@media (min-width: 768px)and (max-width: 992px){
+    .form-container{
+        min-width: 70%;
+    }
+}
+@media (min-width: 576px)and (max-width:768px){
+    #contact{
+        width:90%;
+    }
+    .form-container{
+        min-width: 95%;
+    }
+}
+@media (max-width: 576px) {
+    #contact{
+        width:90%;
+    }
+    .form-container{
+        min-width: 95%;
+    }
+}
+/* ends here */
+
  
