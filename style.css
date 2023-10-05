@@ -253,35 +253,30 @@ nav:nth-child(2) {
 
 /* Products */
 .products-container {
-    width: 100vw;
-    height: fit-content;
-    display: flex;
-    justify-content: center;
-    padding: 1vh 0;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
 }
 
 .products-container .products-box {
     border: 1px solid rgb(190, 190, 190);
-    width: 15vw;
+    width: 11rem;
     height: auto;
     text-align: center;
-    margin: 0 2vw;
-    padding: 1vh;
+    margin: 1rem 1.5rem;
 }
 
 .products-container .products-box:hover {
     cursor: pointer;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
     transition: 0.2s;
-
 }
 
 .products-container .products-box img {
     width: 11em;
     height: auto;
     background-size: cover;
-    flex-wrap: wrap;
-    padding: 2vh 0;
+    padding: 1rem 0.7rem;
 }
 
 /* smartwatch - banner */
@@ -501,12 +496,13 @@ footer {
     cursor: pointer;
 }
 
-/* Responsive */
+/*?Responsive */
 @media only screen and (max-width: 1260px) {
     .products-container .products-box img {
         width: -webkit-fill-available;
     }
 }
+/** Mobile */
 @media only screen and (max-width: 600px) {
     nav {
         width: 100%;
@@ -621,34 +617,23 @@ footer {
 
     /* products */
     .products-container {
-        height: auto;
-        padding: 0
+        grid-template-columns: 1fr;
+        display: flex;
+        align-items: center;
+        flex-direction: column;       
     }
     .products-container .products-box img{
-        width: 11em;
+        width: 16rem;
     }
 
     .products-box {
-        width: 21vw !important;
-        height: auto !important;
-        padding: 0.3em 0;
-    }
-
-    .products-box:nth-child(4) {
-        display: none;
+        width: 18rem !important;
+        height: 20rem;
     }
 
     .products-box img {
-        width: 3.5em !important;
-        padding: 0.4em 0 !important;
-    }
-
-    .products-box h4 {
-        font-size: 0.6em;
-    }
-
-    .products-box p {
-        font-size: 0.5em;
+        width: 15rem !important;
+        padding: 0.8rem 1rem !important;
     }
 
     /* banner */
@@ -672,10 +657,181 @@ footer {
     }
 
     .swiper {
-        height: 30vh;
-        margin-top: 2vh;
+        width: 40%;
+        /* height: min-content; */
+        margin: 5vh 0;
+    }
+    section {
+        margin: 0.5em 0;
+    }
+
+    footer {
+        font-size: 1em;
+    }
+
+    .br {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 294px) {
+    nav {
         width: 100%;
-        margin-bottom: 0;
+        height: 100%;
+    }
+
+    .sec-1 h3 {
+        float: left;
+        /* flex-wrap: wrap; */
+        font-size: 0.9em;
+        padding: .5em;
+    }
+
+    .sec-2 ul{
+        display: none;
+    }
+
+    .nav-mobile{
+        display: block;
+        transition: 0.5s;
+        height: 100%;
+    }
+
+    .nav-m-block{
+        background-color: rgb(26, 60, 102);
+        height: 100%;
+        z-index: 999;
+        width: 100%;
+        position: fixed;
+    }
+
+    .nav-m-block i{
+
+        color: white;
+        font-size: 1.7em;
+        display: flex;
+        position: absolute;
+        right: 6em;
+        flex-wrap: wrap;
+        top: .2em;
+        cursor: pointer;
+    }
+
+    .nav-m-block ul{
+        list-style: none;
+    }
+
+    .nav-m-block ul li a{
+        display: inline-block;
+        margin: 3em;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        font-weight: 600;
+    }
+
+    .nav-m-block ul li a:hover{
+        text-decoration: underline;
+    }
+
+
+    .sec-2 .hamburger{
+        display: flex;
+        width: 50%;
+        justify-content: right;
+        height: fit-content;
+        position: absolute;
+        margin: 0;
+    }
+
+    .sec-2 i{
+        display: flex;
+        align-items: center;
+        margin-top: 1.6px;
+        float: right;
+        font-size: 1.8em;
+        /* width: auto; */
+        margin-right: 0.1em;
+        cursor: pointer;
+        position: absolute;
+    }
+
+    .sec-3 {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .sec-3 ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    .sec-3 li {
+        font-size: 0.7em;
+    }
+
+    /* hero sec */
+    .hero-sec img {
+        /* height: 15em; */
+        width: 100%;
+    }
+
+    /* products title */
+    .fontSizeTitle {
+        font-size: 1.8rem;
+        margin-bottom: 0.3em;
+    }
+
+    /* scroll arrow */
+    .mouse_scroll {
+        display: none;
+    }
+
+    /* products */
+    .products-container {
+        grid-template-columns: 1fr;
+        display: flex;
+        align-items: center;
+        flex-direction: column;       
+    }
+    .products-container .products-box img{
+        width: 14rem;
+    }
+
+    .products-box {
+        width: 15rem !important;
+        height: 20rem;
+    }
+
+    .products-box img {
+        width: 15rem !important;
+        padding: 0.8rem 1rem !important;
+    }
+
+    /* banner */
+    .banner {
+        padding: 0.6em 0 !important;
+        flex-direction: column;
+    }
+
+    .banner img {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* mail sec */
+    .mail-part-2 p {
+        font-size: 0.8em;
+    }
+
+    .mail-part-1 input {
+        font-size: 0.8em;
+    }
+
+    .swiper {
+        width: 36rem;
+        height: 20vh;
+        /* height: min-content; */
+        margin: 5vh 0;
     }
 
     section {
@@ -689,5 +845,35 @@ footer {
     .br {
         display: none;
     }
+}
 
+/** Tablet */
+@media only screen and (max-width: 1024px)  {
+    .products-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .fontSizeTitle {
+        margin-bottom: 1rem;
+    }
+
+    .swiper {
+        width: 93vw;
+        height: 38vh;
+        /* height: min-content; */
+        margin: 5vh 0;
+    }
+}
+
+@media only screen and (max-width: 769px) {
+    .products-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .swiper {
+        width: 93vw;
+        height: 41vh;
+        /* height: min-content; */
+        margin: 5vh 0;
+    }
 }
