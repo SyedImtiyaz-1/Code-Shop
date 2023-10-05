@@ -83,38 +83,45 @@
     "type": "mobile phones",
     "products": [
       {
-        "name": "Iphone 14 Pro Max",
+        "name": "Iphone 14",
         "link": "#",
         "imageSource": "../images/iphone_.jpg",
-        "price": "20",
+        "price": "699",
+        "priceCurrency": "$"
+      },
+      {
+        "name": "Iphone 14 Pro",
+        "link": "#",
+        "imageSource": "../images/iphone_.jpg",
+        "price": "799",
         "priceCurrency": "$"
       },
       {
         "name": "Iphone 14 Pro Max",
         "link": "#",
         "imageSource": "../images/iphone_.jpg",
-        "price": "20",
+        "price": "899",
         "priceCurrency": "$"
       },
       {
-        "name": "Iphone 14 Pro Max",
+        "name": "Iphone 15",
         "link": "#",
         "imageSource": "../images/iphone_.jpg",
-        "price": "20",
+        "price": "999",
         "priceCurrency": "$"
       },
       {
-        "name": "Iphone 14 Pro Max",
+        "name": "Iphone 15 Pro",
         "link": "#",
         "imageSource": "../images/iphone_.jpg",
-        "price": "20",
+        "price": "1099",
         "priceCurrency": "$"
       },
       {
-        "name": "Iphone 14 Pro Max",
+        "name": "Iphone 15 Pro Max",
         "link": "#",
         "imageSource": "../images/iphone_.jpg",
-        "price": "20",
+        "price": "1299",
         "priceCurrency": "$"
       }
     ]
