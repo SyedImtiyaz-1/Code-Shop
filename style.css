@@ -261,7 +261,6 @@ nav:nth-child(2) {
 }
 
 .products-container .products-box {
-    border: 1px solid rgb(190, 190, 190);
     width: 15vw;
     height: auto;
     text-align: center;
@@ -269,13 +268,17 @@ nav:nth-child(2) {
     padding: 1vh;
     text-decoration: none;
     color: black;
+    background-color: white;
+    border-radius: 6px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out; 
 }
 
 .products-container .products-box:hover {
     cursor: pointer;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
     transition: 0.2s;
-
+    transform: translateY(-5px);
 }
 
 
