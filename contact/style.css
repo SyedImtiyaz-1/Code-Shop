@@ -1,151 +1,169 @@
-
-body, p, h1, h2, h3, ul, li, button {
-    margin: 0;
-    padding: 0;
+body,
+p,
+h1,
+h2,
+h3,
+ul,
+li,
+button {
+  margin: 0;
+  padding: 0;
 }
 
 /* Set a background color and font family for the entire page */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
 }
 
 /* Style the navigation bar */
 nav {
-    background-color: #333;
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
 }
 
 nav h3 {
-    font-size: 24px;
-    font-weight: bold;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 nav ul {
-    list-style: none;
-    display: flex;
+  list-style: none;
+  display: flex;
 }
 
 nav ul li {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
 nav ul li:last-child {
-    margin-right: 0;
+  margin-right: 0;
 }
 
 nav a {
-    text-decoration: none;
-    color: #fff;
+  text-decoration: none;
+  color: #fff;
 }
 
 /* Style the main content */
 main {
-    padding: 20px;
+  padding: 20px;
+}
+
+.my-form {
+  margin-top: 15px;
 }
 
 .contact-box {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
 }
 
 .contact-sec-1 img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 .contact-sec-2 {
-    flex: 1;
-    padding-left: 20px;
+  flex: 1;
+  padding-left: 20px;
 }
 
 .contact-sec-2 h1 {
-    font-size: 24px;
-    margin-bottom: 10px;
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
 }
 
 .contact-sec-2 input[type="text"],
 .contact-sec-2 input[type="email"],
 .contact-sec-2 textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.contact-sec-2 input:focus,
+textarea:focus {
+  border: 2px solid #555;
+  outline: none;
 }
 
 .contact-sec-2 textarea {
-    resize: vertical;
+  resize: vertical;
 }
 
 .contact-sec-2 button {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
-
+.error-message {
+  color: red;
+}
 .contact-sec-2 button:hover {
-    background-color: #555;
+  background-color: #555;
 }
 
 /* Style the footer */
 footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
 }
 
 footer h3 {
-    font-size: 24px;
-    font-weight: bold;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 .f2-center {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .f2 ul {
-    list-style: none;
+  list-style: none;
 }
 
 .f2 ul li {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .socials {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .s-link a {
-    color: #fff;
-    margin-right: 10px;
-    text-decoration: none;
-    font-size: 24px;
+  color: #fff;
+  margin-right: 10px;
+  text-decoration: none;
+  font-size: 24px;
 }
 
 .s-link a:hover {
-    color: #ccc;
+  color: #ccc;
 }
 
 /* Copyright text at the bottom */
 .copyright {
-    margin-top: 20px;
-    text-align: center;
+  margin-top: 20px;
+  text-align: center;
 }
 
 .copyright span {
-    font-weight: bold;
+  font-weight: bold;
 }
