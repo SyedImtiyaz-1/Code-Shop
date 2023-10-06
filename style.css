@@ -327,6 +327,16 @@ textarea {
   cursor: pointer;
 }
 
+fixx
+/* Responsive */
+@media(max-width: 600px) {
+  .form-container {
+    max-width: 100%;
+    padding: 40px 19px;
+    margin: 0 auto;
+  }
+}
+
 /* Back to top Button */
 
 #backTop {
@@ -353,3 +363,4 @@ textarea {
   background-color: #f43030;
   box-shadow: 0 10px 20px salmon;
 }
+master
