@@ -326,3 +326,12 @@ textarea {
   font-size: 1rem;
   cursor: pointer;
 }
+
+/* Responsive */
+@media(max-width: 600px) {
+  .form-container {
+    max-width: 100%;
+    padding: 40px 19px;
+    margin: 0 auto;
+  }
+}
