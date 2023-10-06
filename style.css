@@ -327,6 +327,7 @@ textarea {
   cursor: pointer;
 }
 
+fixx
 /* Responsive */
 @media(max-width: 600px) {
   .form-container {
@@ -335,3 +336,31 @@ textarea {
     margin: 0 auto;
   }
 }
+
+/* Back to top Button */
+
+#backTop {
+  position: fixed;
+  right: 4%;
+  bottom: 5%;
+  color: white;
+  text-transform: uppercase;
+  transition: 0.3s;
+  background-color: rgb(247, 7, 7);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.8rem;
+  opacity: 0.5;
+  align-items: center;
+  text-align: center;
+  display: none;
+}
+
+#backTop:hover {
+  opacity: 1;
+  background-color: #f43030;
+  box-shadow: 0 10px 20px salmon;
+}
+master
