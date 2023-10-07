@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Abel&family=Inconsolata:wght@300;400;500;700&display=swap");
 
-
-
 html {
   scroll-behavior: smooth;
 }
@@ -106,18 +104,7 @@ section#mack-book {
 .mack p {
   margin-bottom: 30px;
 }
-.mens-btn{
-  background-color: #fcd303;
-  text-align: center;
-  color:#a86932;
-  font-size: x-large;
-  font-weight: bold;
-  border-radius: 9999px;
-  box-shadow: 0 9px #999;
-}
-.mens-btn:hover{
-  background-color: #fcc603;
-}
+
 .mack a.mack-btn {
   font-weight: bold;
   background-color: black;
