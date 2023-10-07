@@ -534,3 +534,15 @@ footer a:hover{
 }
 /* footer lower styling ends */
 
+.custom-div {
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.2); 
+  border-radius: 10px; 
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2); 
+  padding: 20px;
+  margin: 0; 
+}
+
+.custom-content {
+  padding: 10px; 
+}
