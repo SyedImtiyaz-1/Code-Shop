@@ -189,19 +189,6 @@ a.smartphone-btn:hover svg.bi.bi-arrow-right {
 }
 
 /* End  */
-/*back to top button styles*/
-#backTop{
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  /* background-color: #f1c40f; */
-  border-radius: 50%;
-  border: 1px solid #202020;
-  display: none;
-  padding: 0.1rem 0.4rem;
-  cursor: pointer;
- }
- /*back to top button styles end*/
 
 /* section Laptop start  */
 
@@ -544,6 +531,6 @@ footer a:hover{
     .footer-lower-item1{
         width: 80%;
     }
-};
+}
 /* footer lower styling ends */
 
