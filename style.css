@@ -546,3 +546,9 @@ footer a:hover{
 .custom-content {
   padding: 10px; 
 }
+
+.site-logo {
+  max-width: 100%; 
+  height: 100px; 
+  margin-top: 20px; 
+}
