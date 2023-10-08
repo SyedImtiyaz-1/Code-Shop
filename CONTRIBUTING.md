@@ -1,20 +1,74 @@
+<h1 align=center> For the contributors.  </h1>
+
 # Contributing
 
 We love pull requests from everyone. By participating in this project, you
 agree to abide by the [Code Of Conduct](CODE_OF_CONDUCT.md).
 
-## Steps
+## Project setup
 
-1. [Fork](https://help.github.com/articles/fork-a-repo/) this project
-2. Clone your forked repository to your local machine:
-[Clone](https://help.github.com/articles/fork-a-repo/#step-2-create-a-local-clone-of-your-fork) your forked version
+### Fork and clone the repository
+
+Copy the URL of the forked repository and clone it.
+
 ```bash
- git clone git@github.com:<YOUR-USERNAME>/SyedImtiyaz-1.git
+https://github.com/<your_username>/Code-Shop.git
 ```
-1. Make changes
-2. Create a [branch](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches#working-with-branches)
-3. [Commit](https://help.github.com/articles/adding-a-file-to-a-repository-using-the-command-line/) your changes (write a short descriptive message of what you have done)
-4. [Push](https://help.github.com/articles/pushing-to-a-remote/) your changes to your forked version
-5. Go to the original project on GitHub & Create a [Pull Request](https://help.github.com/articles/about-pull-requests/)
+
+### Change the directory
+
+```bash
+cd Code-Shop
+```
+## Submitting an Issue
+
+Before you submit an issue, please search the issue tracker, maybe an issue for your problem already exists and the discussion might inform you of workarounds readily available.
+
+You can report the issues by filling out the [new issue form](https://github.com/SyedImtiyaz-1/Code-Shop/issues/new/choose).
+
+## Steps to start making changes
+
+### Create and checkout to the new branch.
+
+```bash
+git checkout -b <branch_name>
+```
+
+### Add the changes
+
+```bash
+git add .
+```
+
+### Commit your change with a proper message
+
+```bash
+git commit -m "Enter your message here"
+```
+
+### Make the Pull Request
+
+```bash
+git push origin <branch_name>
+```
+### ✅ Code Reviews
+
+- Be open to feedback and constructive criticism from other contributors.
+- Participate in code reviews by reviewing and providing feedback.
+
+### ✅ Bug Fixes and Issue Reporting
+
+- Help identify and fix bugs in the project.
+- Report any issues or bugs you encounter during your contribution by creating a new issue in the GitHub repository.
+
+### 🚀 Feature Requests
+
+- Suggest new features or improvements that you believe would enhance the project.
+
+### ☘️ Spread the Word
+
+- Share your experience and the project with others.
+- Spread the word about the project on social media, developer forums, or any relevant community platforms.
 
 ## DONE 🥳
+That's it! Thank you for your valuable contribution!

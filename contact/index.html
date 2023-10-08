@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +9,10 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="./style.css">
+    <script src="./index.js"></script>
     <title>Contact</title>
 </head>
+
 <body>
     <nav>
         <div class="sec-1">
@@ -30,13 +33,29 @@
                 <img src="../images/—Pngtree—women contact support flat illustration_5439566.png" alt="">
             </div>
 
-            <div class="contact-sec-2">
-                <h1>CONTACT US</h1>
-                <input type="text" placeholder="Enter your name">
-                <input type="email" placeholder="Enter your mail">
-                <textarea cols="35" rows="6" placeholder="Your Message"></textarea>
-                <Button>Submit</Button>
+
+            <div class="contact-sec-2" id="contact-form">
+                <h1>We would like to hear from you!</h1>
+                <h5>We will get back to you in 24 hours</h5>
+                <form id="my-form" class="my-form">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Name">
+                        <span class="error-message" id="name-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="email" placeholder="Email">
+                        <div class="error-message" id="email-error"></div>
+                    </div>
+                    <div class="form-group">
+                        <textarea cols="35" rows="6" id="message" placeholder="Write Your Message..."></textarea>
+                        <div class="error-message" id="message-error"></div>
+                    </div>
+
+                    <Button type="submit">Send Message</Button>
+                </form>
             </div>
+
+
         </div>
     </main>
 
@@ -79,4 +98,5 @@
     </footer>
 
 </body>
+
 </html>
