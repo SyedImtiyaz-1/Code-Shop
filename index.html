@@ -549,7 +549,7 @@
             <div class="container">
                 <div class="laptop-header">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="">
                             <h2>Contact us</h2>
                         </div>
                     </div>
@@ -565,7 +565,7 @@
                         <input type="email" id="email" name="email" required>
 
                         <label for="phone">Phone: </label>
-                        <input type="tel" id="phone" name="phone">
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]*">
 
                         <label for="message">Message: </label>
                         <textarea id="message" name="message" rows="4" required></textarea>
@@ -737,6 +737,14 @@
     <script src="./script.js"></script>
     <!-- js iconify-icon -->
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <!-- Number validation  -->
+    <script>
+        document.getElementById('phone').addEventListener('input', function () {
+            this.value = this.value.replace(/[^0-9]/g, '');
+        });
+    </script>
+    
+
 </body>
 
 </html>
