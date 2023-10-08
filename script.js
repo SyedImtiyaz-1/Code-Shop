@@ -1,14 +1,18 @@
 // Get the button:
-let mybutton = document.getElementById("goToTopBtn");
+const goToTopBtn = document.getElementById("goToTopBtn");
+
+// Add a click event listener to the button
+goToTopBtn.addEventListener("click", function() {topFunction()});
+
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
+    goToTopBtn.style.display = "block";
   } else {
-    mybutton.style.display = "none";
+    goToTopBtn.style.display = "none";
   }
 }
 
