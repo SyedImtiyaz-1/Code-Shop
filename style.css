@@ -3,13 +3,15 @@
 html {
   scroll-behavior: smooth;
 }
-
+:root{
+  --primary-color:rgb(255, 239, 239);
+  --secondary-color:black;
+}
 body {
   font-family: "Abel", sans-serif;
   font-size: large;
-  background-color: rgb(255, 239, 239);
+  background-color: var(--primary-color);
 }
-
 
 h2{
     font-size: 2.5rem;
@@ -25,7 +27,21 @@ p {
   cursor: pointer;
 }
 
-
+.dark-theme{
+ --primary-color:rgb(38, 37, 37);
+ --secondary-color:white;
+}
+#icon{
+  width:20px;
+  height:20px;
+  cursor:pointer;
+  margin-top:10px;
+}
+#smartphone, #MenTshirt , #WomanMenTshirt,
+#Kids, #categories, #About ,#contact {.container .fo{
+  color: var(--secondary-color);
+}
+}
 /* Header nav start  */
 
 a.nav-link {
@@ -81,7 +97,12 @@ nav.fill ul li a.nav-link:after {
 }
 
 /* End  */
-
+#mack-book .row .me{
+    color:var(--secondary-color);
+}
+#mack-book .row .for{
+  color:var(--secondary-color);
+}
 /* section Mack book start  */
 
 section#mack-book {
@@ -241,6 +262,7 @@ a.laptop-btn:hover svg.bi.bi-arrow-right {
 
 hr {
   width: 130px;
+  
   background-image: linear-gradient(145deg, #f1c40f, #e67e22);
   height: 10px;
   border: none;
@@ -248,6 +270,7 @@ hr {
   margin-bottom: 50px;
 }
 .categories-card {
+  background-color:rgb(255, 239, 239);
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);;
   padding: 5%;
   transition: ease-in-out 0.2s;
