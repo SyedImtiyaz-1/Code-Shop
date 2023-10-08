@@ -39,7 +39,12 @@ a.nav-link {
 nav.fill ul li a.nav-link {
   transition: all 0.5s;
 }
-
+header{
+  position:sticky;
+  top:0px;
+  z-index:20;
+  /* style="background-color: #ffffffcc;" */
+}
 nav.fill ul li a.nav-link:after {
   text-align: left;
   content: ".";
