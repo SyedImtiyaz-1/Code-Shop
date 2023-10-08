@@ -392,12 +392,8 @@ textarea {
 /* ends here */
 
 footer{
-    /* padding-top: 1.3em; */
     padding: 0;
-    width: 110%;
     position:relative;
-    left: -5%;
-    /* height: ; */
     margin: auto;
     border: 2px solid rgb(228, 223, 223);
     background-color: #ebd2d2;
@@ -515,6 +511,8 @@ footer a:hover{
 
 /* footer lower styling starts */
 .footer-lower{
+    width: 80%;
+    margin:auto;
     display: flex;
     padding-left: 1.5em;
     padding-top: 0.3em;
