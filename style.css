@@ -27,23 +27,19 @@ p {
 
 
 /* Header nav start  */
-
-a.nav-link {
-  margin-right: 20px;
+ a.nav-link {
+  margin-right: 10px;
   font-weight: 700;
-}
+} 
 .navbar-light .navbar-nav .active > .nav-link:hover {
   color: #ffffff;
 }
-
 nav.fill ul li a.nav-link {
   transition: all 0.5s;
 }
-
 nav.fill ul li a.nav-link:after {
   text-align: left;
   content: ".";
-  margin: 0;
   opacity: 0;
 }
 
@@ -53,28 +49,23 @@ nav.fill ul li a.nav-link:hover {
 }
 
 nav.fill ul li a.nav-link:hover:after {
-  z-index: -10;
+  z-index: 10;
+  background-color: black;
   animation: fill 1s forwards;
   opacity: 1;
 }
 
 nav.fill ul li a.nav-link {
-  position: relative;
+  position: fixed;
 }
 
 nav.fill ul li a.nav-link:after {
   position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 0%;
   content: ".";
   color: transparent;
   background: #aaa;
-  height: 1px;
-}
-
+  height: 12832px;
+} 
 /* End  */
 
 /* section Mack book start  */
@@ -82,7 +73,6 @@ nav.fill ul li a.nav-link:after {
 section#mack-book {
   margin-bottom: 100px;
 }
-
 .carousel-indicators li {
   width: 20px;
   height: 8px;
@@ -138,7 +128,7 @@ a.mack-btn:hover svg.bi.bi-arrow-right {
 /* section Smart phone start  */
 
 section#smartphone {
-  margin-bottom: 100px;
+  margin-bottom: 200px;
 }
 
 .card {
@@ -193,7 +183,7 @@ a.smartphone-btn:hover svg.bi.bi-arrow-right {
 /* section Laptop start  */
 
 section#laptop {
-  margin-bottom: 100px;
+  margin-bottom: 200px;
 }
 
 .laptop-header {
