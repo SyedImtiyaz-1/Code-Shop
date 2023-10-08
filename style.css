@@ -34,6 +34,15 @@ p {
 .navbar-light .navbar-nav .active > .nav-link:hover {
   color: #ffffff;
 }
+.nav-list li{
+  margin-left:120px;
+}
+header{
+   position: sticky;
+  top: 0px;
+  z-index:22;
+}
+
 nav.fill ul li a.nav-link {
   transition: all 0.5s;
 }
@@ -49,18 +58,22 @@ nav.fill ul li a.nav-link:hover {
 }
 
 nav.fill ul li a.nav-link:hover:after {
-  z-index: 10;
-  background-color: black;
+  z-index: -10;
   animation: fill 1s forwards;
   opacity: 1;
 }
 
 nav.fill ul li a.nav-link {
-  position: fixed;
+  position: relative;
 }
 
 nav.fill ul li a.nav-link:after {
   position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
   content: ".";
   color: transparent;
   background: #aaa;
@@ -277,12 +290,12 @@ footer {
 }
 
 .form-container {
-    max-width: 55%;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  max-width: 40%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 .contact-form h2 {
@@ -308,237 +321,47 @@ textarea {
   resize: vertical;
 }
 .submit-button {
-    padding: 10px 20px;
-    background-color: #0dac30;
-    border: none;
-    color: white;
-    border-radius: 4px;
-    font-size: 1rem;
-    cursor: pointer;
-}
-/* added css to correct the view of contact form for different devices */
-@media (min-width: 1200px){
-    .form-container{
-        min-width: 40%;
-    }
-}
-@media (min-width: 992px)and (max-width:1200px){
-    .form-container{
-        min-width: 55%;
-    }
-}
-@media (min-width: 768px)and (max-width: 992px){
-    .form-container{
-        min-width: 70%;
-    }
-}
-@media (min-width: 576px)and (max-width:768px){
-    #contact{
-        width:90%;
-    }
-    .form-container{
-        min-width: 95%;
-    }
-}
-@media (max-width: 576px) {
-    #contact{
-        width:90%;
-    }
-    .form-container{
-        min-width: 95%;
-    }
-}
-/* ends here */
-
-footer{
-    /* padding-top: 1.3em; */
-    padding: 0;
-    width: 110%;
-    position:relative;
-    left: -5%;
-    /* height: ; */
-    margin: auto;
-    border: 2px solid rgb(228, 223, 223);
-    background-color: #ebd2d2;
-}
-.footer-main{
-    padding-top: 0.4em;
-    padding-bottom: -0.2em;
-    display: flex;
-    width: 90%;
-    margin: auto;
-    
-    justify-content: space-evenly;
-    
+  padding: 10px 20px;
+  background-color: #0dac30;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
 }
 
-.footer-sec1, .footer-sec4{
-    width: 24%;
-}
-.footer-sec1 h4, .footer-sec4 h4{
-    font-size: 1.3rem;
-}
-.footer-sec1 h3, .footer-sec4 h3{
-    font-size: 1.4rem;
-}
-.footer-sec2, .footer-sec3{
-    width: 24%;
-}
-.footer-sec2 h3, .footer-sec3 h3{
-    font-size: 1.4rem;
-}
-footer a{
-    text-decoration: none;
-    color: #212529;
-    
-}
-/* footer amin styling */
-
-.footer-main li{
-    list-style:none;
-}
-.footer-main ul{
-    padding-left: 0.5em;
-    
-}
-footer a:hover{
-    color: #212529;
-    text-decoration: none;
-}
-.footer-main select{
-    width: 40%;
-    padding: 0.15em;
-    margin-left: 0.2em;
-    border:  1px solid black;
-    border-radius: 0.3em ;
-    background-color: #ffdbdb;
+/* Back to top Button */
+#backTop {
+  position: fixed;
+  right: 4%;
+  bottom: 5%;
+  color: white;
+  text-transform: uppercase;
+  transition: 0.3s;
+  background-color: rgb(247, 7, 7);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.8rem;
+  opacity: 0.5;
+  align-items: center;
+  text-align: center;
+  display: none;
 }
 
-.footer-main option:checked{
-    background: grey;
-    color: white;
-    padding: 0.15em;
-    margin-left: 0.5em;
-    border-radius: 0.3em ;
-    font-size: 1.05rem;
-    padding-bottom: 0.25em;
-}
-.footer-main option{
-    
-    font-size: 1.05rem;
-    padding-bottom: 0.25em;
-}
-@media (min-width:765px) and (max-width:1000px){
-    .footer-sec3{
-        display: none;
-    }
-    footer{
-        margin-left:0.9em;
-    }
-    .footer-main select{
-        width: 55%;
-    }
-    
-}
-@media  (max-width:765px){
-    .footer-sec3, .footer-sec2{
-        display: none;
-    }
-    .footer-sec1, .footer-sec4{
-        width: 45%;
-    }
-    .footer-main select{
-        width: 60%;
-    }
-    
+#backTop:hover {
+  opacity: 1;
+  background-color: #f43030;
+  box-shadow: 0 10px 20px salmon;
 }
 
-/* footer main styling ends */
-
-/* footer go styling starts */
-.footer-go{
-
-    padding-top: 0.15em;
-    border-bottom: 2px solid white ;
-    border-top: 2px solid white ;
-}
-.footer-go:hover{
-    /* background-color: rgb(255, 239, 239); */
-    
-    border: 2px solid rgb(255, 239, 239) ;
-   background-color: rgb(177, 168, 168);
-   cursor: pointer;
-}
-/* footer go styling ends */
-
-
-/* footer lower styling starts */
-.footer-lower{
-    display: flex;
-    padding-left: 1.5em;
-    padding-top: 0.3em;
-    padding-bottom: 0.3em;
-    justify-content: space-between;
-    border-top: 2px solid white;
-    border-bottom: 2px solid white;
-    
-}
-.footer-lower-item1{
-    width: 33%;
+/* Responsive */
+@media(max-width: 600px) {
+  .form-container {
+    max-width: 100%;
+    padding: 40px 19px;
+    margin: 0 auto;
+  }
 }
 
-.footer-lower-item1 div input{
-    border: 1px solid #ced4da;
-    
-}
-.footer-lower-item1 div span{
-    padding: 0 0.75rem;
-}
-.footer-lower-item2{
-    width: 50%;
-}
-.payment-logos{
-    padding-left: 1.5em;
-    padding-right: 7.5em;
-    display: flex;
-    justify-content: space-evenly;
-}
-@media (min-width:765px) and (max-width:1000px){
-    .footer-lower-item1{
-        width: 47%;
-    }
-    .payment-logos{
-        padding-right: 2.5em;
-    }
-    #payment-logos5 , #payment-logos6 , #payment-logos7 {
-        display: none;
-    }
-}
-@media (max-width:765px) {
-    .footer-lower-item2{
-        display: none;
-    }
-    .footer-lower-item1{
-        width: 80%;
-    }
-}
-/* footer lower styling ends */
-
-.custom-div {
-  background-color: white;
-  border: 1px solid rgba(0, 0, 0, 0.2); 
-  border-radius: 10px; 
-  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2); 
-  padding: 20px;
-  margin: 0; 
-}
-
-.custom-content {
-  padding: 10px; 
-}
-
-.site-logo {
-  max-width: 100%; 
-  height: 100px; 
-  margin-top: 20px; 
-}
