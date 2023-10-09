@@ -1,3 +1,7 @@
+<a href="https://www.linkedin.com/in/imtiyaz-sde/" target="blank">Let's connect - <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="https://www.linkedin.com/in/imtiyaz-sde/" height="30" width="40" /></a>
+
+- Connect 1:1 with me ➡ https://topmate.io/syedimtiyazali/
+
 # Welcome to CodeShop
 
 Welcome to CodeShop! We are thrilled to have you here. Our app is dedicated to providing you with an exceptional online shopping experience, offering a wide selection of high-quality products ata competitive prices.
