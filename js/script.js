@@ -17,6 +17,39 @@ function capitalize(str) {
     .join(' ')
 }
 
+function performSearch(searchTerm) {
+  // Example Search Function (you'll need to customize this based on your actual search logic)
+  let results = [];
+  // Perform search operations here
+  // Add results to the `results` array
+  return results;
+}
+
+document.getElementById('searchForm').addEventListener('submit', function(event) {
+  event.preventDefault(); // Prevent the form from submitting and refreshing the page
+
+  var searchTerm = document.getElementById('searchInput').value;
+  var searchResults = performSearch(searchTerm);
+
+  displaySearchResults(searchResults);
+});
+function displaySearchResults(results) {
+  var resultsContainer = document.getElementById('searchResults');
+  resultsContainer.innerHTML = ""; // Clear previous results
+
+  if (results.length > 0) {
+      results.forEach(function(result) {
+          var resultElement = document.createElement('a');
+          resultElement.href = result.link; // Assuming each result has a 'link' property
+          resultElement.textContent = result.title; // Assuming each result has a 'title' property
+          resultsContainer.appendChild(resultElement);
+      });
+  } else {
+      resultsContainer.textContent = "No results found";
+  }
+}
+
+
 async function fetchAndRenderData() {
   try {
     const tShirtDiv = document.getElementById("tshirt-products");
@@ -51,6 +84,7 @@ async function fetchAndRenderData() {
     console.error(error);
   }
 }
+
 fetchAndRenderData()
 
 heroSec.addEventListener("click", function () {
@@ -91,7 +125,31 @@ closeNav.addEventListener("click", () => {
   sideNav.style.width = "0px"
 })
 
-// reload
 window.addEventListener('load', function () {
   input.value = " ";
 });
+
+// Search Functionality
+
+function performSearch(searchTerm) {
+  // Example Search Function (you'll need to customize this based on your actual search logic)
+  let results = [];
+  // Perform search operations here
+  // Add results to the `results` array
+  return results;
+}
+
+document.getElementById('searchForm').addEventListener('submit', function(event) {
+  event.preventDefault(); // Prevent the form from submitting and refreshing the page
+
+  var searchTerm = document.getElementById('searchInput').value;
+  var searchResults = performSearch(searchTerm);
+
+  displaySearchResults(searchResults);
+});
+
+function displaySearchResults(results) {
+  // Modify this function to display search results on your webpage
+  // You can update the DOM to show the results in a specific format
+  // For example, update a section or a div with the search results
+}
