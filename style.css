@@ -693,3 +693,7 @@ textarea {
 .submit-button:hover {
   background-color: #0056b3;
 }
+#thanks{
+  font-size: large;
+  font-weight: bold;
+}
