@@ -44,31 +44,13 @@
      We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
     </style>
     <title>review</title>
-
-    <style>
-        .section {
-            display: flex;
-            align-items: center;
-            padding: 20px;
-        }
-
-        .section img {
-            max-width: 50%;
-            padding: 20px;
-        }
-
-        .section .text {
-            flex: 1;
-        }
-    </style>
 </head>
 <body>
-  
-    <!-- Header start -->
+    
+            <!-- Header start -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-light fill">
             <a class="navbar-brand" href="/index.html"><img src="images/logo.png" alt="Code Shop home"></a>
-
             <button class="navbar-toggler" type="button" data-toggle="collapse"
                 data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                 aria-expanded="false" aria-label="Toggle navigation">
@@ -102,49 +84,131 @@
             </div>
         </nav>
     </header>
-
+    <h1>Bestsellers here!</h1>
     <section>
         <div class="section">
-            <img src="images/shirt1.jpg"  alt="image not found">
-            <div class="text">
-                <h2>Classic Shirt</h2>
-        <p>Amazing product by Code shop!
-            Absolutely promising website for clothes
-        </p>
-    </div>
-</div>
-
-<div class="section">
-    <img src="images/smartwatch.png" alt="Image 2">
-    <div class="text">
-        <h2>Apple SmartWatch</h2>
-        <p>
-            First cutomer-approved perfect waterproof watch by apple.
-            Classic service by Code Shop
-        </p>
-    </div>
-</div>
-
-<div class="section">
-    <img src="images/women1.jpg" alt="Image 3">
-    <div class="text">
-        <h2>Leather Jacket</h2>
-        <p>
-            Zero difference between image and real product.
-            Loved it.
-        </p>
-    </div>
-</div>
-    </section>    
-        
-
-    <section id="review">
-        <div class="container">
-            <h2>Review</h2>
-            <br>
-            <h3>Your reviews here:</h3>
-            <textarea id="review-section" name="review" autofocus placeholder="write here"></textarea>
-            <button type="submit" class="submit-button">Submit</button>
+            <!-- Subsection 1 -->
+            <div class="subsection">
+                <img src="images/kids1.jpg" alt="" class="img-fluid">
+                <h1>Kids Fav.</h1>
+                <p>
+                    <li>Gentle on skin</li>
+                    <li>available in all sizes</li>
+                    <li>Customise your design</li>
+                </p>
+                <a class="mack-btn">Buy Now
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right"
+                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M10.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L12.793 8l-2.647-2.646a.5.5 0 0 1 0-.708z" />
+                        <path fill-rule="evenodd"
+                            d="M2 8a.5.5 0 0 1 .5-.5H13a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8z" />
+                    </svg>
+                </a>
+            </div>
+    
+            <!-- Subsection 2 -->
+            <div class="subsection">
+                <img src="images/kids2.jpg" alt="" class="img-fluid">
+                <h2>All weather</h2>
+                <p>
+                    <li>All Weather friendly</li>
+                    <li>Available in all clours</li>
+                    <li>100% cotton</li>
+                </p>
+                <a class="mack-btn">Buy Now
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right"
+                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M10.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L12.793 8l-2.647-2.646a.5.5 0 0 1 0-.708z" />
+                        <path fill-rule="evenodd"
+                            d="M2 8a.5.5 0 0 1 .5-.5H13a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8z" />
+                    </svg>
+                </a>
+            </div>
+    
+            <!-- Subsection 3 -->
+            <div class="subsection">
+                <img src="images/kids3.jpg" alt="" class="img-fluid">
+                <h2>Parents choice</h2>
+                <p>
+                    <li>Double layered shirts</li>
+                    <li>Made with artificial cotton</li>
+                    <li>Available in mmulti-colours</li>
+                </p>
+                <a class="mack-btn">Buy Now
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right"
+                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M10.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L12.793 8l-2.647-2.646a.5.5 0 0 1 0-.708z" />
+                        <path fill-rule="evenodd"
+                            d="M2 8a.5.5 0 0 1 .5-.5H13a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+    <h1>See more options here!</h1>
+    <section id="Kids">
+            <div class="row justify-content-center card-hover align-items-center mx-auto">
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-5 mx-auto">
+                    <div class="card text-center" style="width: 18rem;border:none;">
+                        <img src="images/laptop/ktshirt.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"><b>Kid's Solid</b></h5>
+                            <p class="card-text">Navy Blue solid t-shirt.(6-8 yrs)</p>
+                            <h5><b>$18</b></h5>
+                            <a href="#" class="btn laptop-btn">BUY NOW
+                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right"
+                                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M10.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L12.793 8l-2.647-2.646a.5.5 0 0 1 0-.708z" />
+                                    <path fill-rule="evenodd"
+                                        d="M2 8a.5.5 0 0 1 .5-.5H13a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-5 mx-auto">
+                    <div class="card text-center" style="width: 18rem;border:none;">
+                        <img src="images/laptop/ktshirt2.jpg" class="card-img-top" alt="image not found">
+                        <div class="card-body">
+                            <h5 class="card-title"><b>Kids Striped</b></h5>
+                            <p class="card-text">Red/White horizontal striped.(5-6 yrs)</p>
+                            <h5><b>$14</b></h5>
+                            <a href="#" class="btn laptop-btn">BUY NOW
+                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right"
+                                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M10.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L12.793 8l-2.647-2.646a.5.5 0 0 1 0-.708z" />
+                                    <path fill-rule="evenodd"
+                                        d="M2 8a.5.5 0 0 1 .5-.5H13a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-5 mx-auto">
+                    <div class="card text-center" style="width: 18rem;border:none;">
+                        <img src="images/laptop/ktshirt3.jpg" class="card-img-top" alt="image not found">
+                        <div class="card-body">
+                            <h5 class="card-title"><b>Kid's Striped</b></h5>
+                            <p class="card-text">Blue/Yellow Striped.(9-11 yrs)</p>
+                            <h5><b>$20</b></h5>
+                            <a href="#" class="btn laptop-btn">BUY NOW
+                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right"
+                                    fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M10.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L12.793 8l-2.647-2.646a.5.5 0 0 1 0-.708z" />
+                                    <path fill-rule="evenodd"
+                                        d="M2 8a.5.5 0 0 1 .5-.5H13a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <footer>
@@ -230,7 +294,6 @@
                                 </a>
                             </li>
                             <li>
-
                                 <a href="https://github.com/SyedImtiyaz-1/Code-Shop" title="Github"
                                     aria-label="Github" target="_blank">
                                     <iconify-icon icon="icon-park:github"
@@ -279,11 +342,11 @@
                                                 class="button" value="Subscribe">
                                             <p style="margin: 0px auto;"><a href="http://eepurl.com/iBueXU"
                                                     title="Mailchimp - email marketing made easy and fun"><span
-                                                        style="display: inline-block; background-color: transparent; border-radius: 4px;"><img
-                                                            class="refferal_badge"
-                                                            src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-dark.svg"
-                                                            alt="Intuit Mailchimp"
-                                                            style="width: 220px; height: 40px; display: flex; padding: 2px 0px; justify-content: center; align-items: center;"></span></a>
+                                                    style="display: inline-block; background-color: transparent; border-radius: 4px;"><img
+                                                    class="refferal_badge"
+                                                    src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-dark.svg"
+                                                    alt="Intuit Mailchimp"
+                                                    style="width: 220px; height: 40px; display: flex; padding: 2px 0px; justify-content: center; align-items: center;"></span></a>
                                             </p>
                                         </div>
                                     </div>
