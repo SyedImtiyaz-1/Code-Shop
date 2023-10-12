@@ -828,3 +828,8 @@ textarea {
     font-size: 11px;
   }
 }
+
+#thanks{
+  font-size: large;
+  font-weight: bold;
+}
