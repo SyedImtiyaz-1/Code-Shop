@@ -89,6 +89,90 @@ nav.fill ul li a.nav-link:after {
   height: 1px;
 }
 
+nav .search {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin-left: 12px;
+}
+
+nav .search .search-container{
+  width: 540px;
+  height: 36px;
+  background-color: white;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 23%);
+  display: flex;
+}
+
+nav .search .search-container input {
+  width: calc(100% - 32px);
+  padding: 16px;
+  outline: none;
+  border: none;
+}
+
+nav .search .search-container button {
+  width: 36px;
+  height: 100%;
+  padding: 0 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: white;
+  border-radius: 0 2px 2px 0;
+  cursor: pointer;
+}
+
+nav .login {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin: 0 20px;
+}
+
+nav .login button {
+  width: 122px;
+  padding: 5px 40px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+nav .become-seller {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin: 0 20px;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+nav .more{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin: 0 20px;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+}
+nav .more svg {
+  margin-left: 8px;
+  rotate: -90deg;
+}
+
+nav .cart {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin: 0 20px;
+  color: white;
+}
+nav .cart svg {
+  margin-right: 8px;
+}
 /* End  */
 
 /* section Mack book start  */
@@ -577,75 +661,25 @@ footer a:hover{
 }
 /* footer lower styling ends */
 
-/* About Us section's styles start here */
 .custom-div {
   background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.2); 
   border-radius: 10px; 
-  padding: 30px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2); 
+  padding: 20px;
   margin: 0; 
 }
-.inner-container{
-  padding: 20px;
-  border-left: 3px solid #e67e22;
-  border-right: 3px solid #e67e22;
-  background: linear-gradient(to right, #e67e22 50%, transparent 50%),
-              linear-gradient(to right,transparent 50%,#e67e22 50%);
-  background-size: 100% 3px;
-  background-repeat: no-repeat;
-  background-position: top,bottom;
-}
+
 .custom-content {
   padding: 10px; 
 }
 
 .site-logo {
   max-width: 100%; 
-  height: auto; 
-  margin-top: 20px;
+  height: 100px; 
+  margin-top: 20px; 
 }
-.people,.message,.quality{
-  width: 95%;
-  height: auto;
-  margin-top:80px;
-  padding: 20px 0px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  transition: transform 0.3s ease, color 0.3s ease;
-}
-.people:hover,.message:hover,.quality:hover{
- cursor: pointer;
-}
-.people:hover i,.message:hover i,.quality:hover i{
-  transform: scale(1.1);
-  color: #c86713;
- }
-.people i,.message i,.quality i{
-  font-size: 40px;
-  margin-bottom: 15px;
-  color: #e67e22;
-}
-.logo-container{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-@media (max-width:767px){
-  .people,.message,.quality{
-    margin-top: 10px;
-  }
-  .people i,.message i,.quality i{
-    font-size: 30px;
-  }
-  .row-top{
-    margin-bottom: 40px;
-  }
-  .inner-container{
-    background: none;
-    border: 2px solid #c86713;
-  }
-}
-/* About Us section's styles ends here */
+
 
 .form-container {
   background-color: #f9f9f9;
