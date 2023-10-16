@@ -693,6 +693,142 @@ textarea {
 .submit-button:hover {
   background-color: #0056b3;
 }
+
+/*FAQS*/
+.faq {
+  padding-bottom: 20px;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+.faq_heading {
+  padding-top: 5rem;
+  color:black;
+  width: 100%;
+}
+
+.faq_heading h2 {
+  
+  padding-bottom: 2rem;
+}
+
+.accordion {
+  width: 66.5rem;
+  padding: 1.2rem 0;
+  border-radius: 1rem;
+  background: rgba(1, 59, 112, 0.4);;
+  margin-top: 2rem;
+}
+
+.accordion__heading {
+  margin-bottom: 1rem;
+  padding: 0 1.4rem;
+}
+
+.accordion__item:not(:last-child) {
+  border-bottom: 1px solid lightgrey;
+}
+
+.accordion__btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1.2rem 1.4rem;
+  background: rgba(1, 59, 112, 0.4);
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 1.2rem;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.1s;
+  font-weight: 300;
+}
+
+.accordion__btn:hover {
+  color: #2868d0;
+  background: hsl(248, 53%, 97%);
+  font-weight: 700;
+}
+
+.accordion__item--active .accordion__btn {
+  color: #2868d0;
+  border-bottom: 2px solid #2868d0;
+  background: hsl(248, 53%, 97%);
+  font-weight: 700;
+}
+
+.fa-lightbulb {
+  padding-right: 1rem;
+}
+
+.accordion__icon {
+  border-radius: 50%;
+  transform: rotate(0deg);
+  transition: 0.3s ease-in-out;
+  opacity: 0.9;
+}
+
+.accordion__item--active .accordion__icon {
+  transform: rotate(135deg);
+}
+
+.accordion__content {
+  font-weight: 300;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  color: white;
+  transform: translateX(16px);
+  transition: max-height 0.5s ease, opacity 0.5s, transform 0.5s;
+}
+.accordion__content .email{
+  color:  #ffff00;
+}
+.accordion__content p {
+  padding: 1rem 1.8rem;
+}
+
+.accordion__item--active .accordion__content {
+  opacity: 1;
+  transform: translateX(0px);
+  max-height: 100vh;
+}
+
+@media (max-width: 991px) {
+  .accordion {
+    width: 31rem;
+    left: 13rem;
+  }
+}
+
+@media (max-width: 547px) {
+  .accordion {
+    width: 24rem;
+  }
+}
+
+@media (max-width: 445px) {
+  .faq_heading {
+    width: 94%;
+  }
+
+  .faq_heading h1 {
+    font-size: 29px;
+  }
+
+  .accordion {
+    width: 16rem;
+  }
+
+  .accordion__btn {
+    font-size: 11px;
+  }
+}
+
 #thanks{
   font-size: large;
   font-weight: bold;
