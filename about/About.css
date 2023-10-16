@@ -11,13 +11,21 @@ h1, h2, h3, h4, h5, h6, p{
 
 
 /* Header nav start  */
-
+#jk img{
+    width:95px;
+  /* height: 50%; */
+  margin-top: 7px;
+}
 a.nav-link {
     margin-right: 20px;
     font-weight: 700;
 }
 .navbar-light .navbar-nav .active>.nav-link:hover{
     color: #ffffff;
+}
+
+.navbar-brand{
+    width: 50px;
 }
 
 nav.fill ul li a.nav-link {

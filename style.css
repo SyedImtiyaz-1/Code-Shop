@@ -40,6 +40,13 @@ p {
 
 /* Header nav start  */
 
+#logo img{
+  width: 50%;
+  height: 50%;
+  margin-top: 7px;
+  /* padding-top: 5px; */
+  
+}
 a.nav-link {
   margin-right: 20px;
   font-weight: 700;
