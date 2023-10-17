@@ -2,6 +2,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -332,12 +333,16 @@ footer {
 }
 
 .form-container {
-    max-width: 55%;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  width:60%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fceaea;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 5px #f3cccc;
+}
+
+.form-container:hover {
+  box-shadow: 5px 5px 15px 15px #f3cccc;
 }
 
 .contact-form h2 {
@@ -353,24 +358,123 @@ footer {
   display: block;
   font-weight: bold;
 }
-.form-container input,
-textarea {
+
+.form-container input, textarea {
   width: 100%;
+  outline: none;
+  background-color: #f3cccc;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
   margin-bottom: 1rem;
   resize: vertical;
 }
+
 .submit-button {
-    padding: 10px 20px;
-    background-color: #0dac30;
+  width: 120px;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #f0c5c5;
+  border: none;
+  color: white;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.submit-button:hover{
+  background-color: salmon;
+  box-shadow: 2px 3px 6px 3px #cfa9a9;
+  outline: none;
+}
+
+/*  media queries for making contact us form responnsive */
+@media only screen and (max-width: 768px) and (min-width: 330px)  {
+  .contact-form {
+    padding: 20px 0;
+    margin: 0 5px;
+  }
+  
+  .form-container {
+    width: 90%;
+    
+    padding: 20px;
+    background-color: #fceaea;
+    border-radius: 10px;
+    box-shadow: 0 0 4px 4px #f3cccc;
+  }
+  .form-container:hover {
+    box-shadow: 3px 3px 10px 10px #f3cccc;  
+  }
+  
+  .contact-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 10px;
+  }
+  
+  .form-container label {
+    display: block;
+    font-weight: bold;
+  }
+  label{
+    width: auto;
+    height: fit-content;
+    font-size: small;
+  }
+  .input{
+    width: auto;
+    height: 30px;
+  }
+  .Git{
+    font-size: larger;
+    font-weight: 800;
+  }
+  textarea {
+    width: 100%;
+    height: auto;
+    outline: none;
+    background-color: #f3cccc;
+    padding: 10px;
+    font-size: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    resize: vertical;
+  } 
+  .submit-button {
+    width: 80px;
+    padding: 8px;
+    margin-top: 10px;
+    background-color: #f0c5c5;
     border: none;
     color: white;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    align-items: center;
     border-radius: 4px;
-    font-size: 1rem;
+    font-size: 0.8rem;
+    transition: 0.3s;
     cursor: pointer;
+  }
+  .submit-button:hover{
+    background-color: salmon;
+    box-shadow: 1px 2px 4px 2px #cfa9a9;
+    outline: none;
+  }
 }
+
 /* added css to correct the view of contact form for different devices */
 @media (min-width: 1200px){
     .form-container{
