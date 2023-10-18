@@ -411,6 +411,8 @@ footer{
     margin: auto;
     border: 2px solid rgb(228, 223, 223);
     background-color: #ebd2d2;
+    border-radius:10px;
+    padding-top:18px;
 }
 .footer-main{
     padding-top: 0.4em;
