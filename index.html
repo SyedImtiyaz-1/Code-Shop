@@ -3,9 +3,9 @@
 
 <head>
     <!-- Required meta tags -->
-    <!-- <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
-    <!-- Meta Description -->
+    <!-- <meta charset="utf-8" -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">  -->
+     <!-- Meta Description  -->
     <meta name="description"
         content="Discover chemical-free beauty products, stylish shoes, and innovative gadgets in our online store. Shop with confidence and quality!">
     <!-- Meta Keywords -->
@@ -29,6 +29,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
     <!-- Main css -->
     <link rel="stylesheet" href="style.css">
     <!-- --Font awesome-- -->
@@ -57,15 +58,17 @@
         <main class="container">
             <!-- Header start -->
             <header>
+                <toggle class="bi bi-brightness-high-fill" id="toggleDark"></toggle>
                 <nav class="navbar navbar-expand-lg navbar-light fill">
-                    <a class="navbar-brand" href="/index.html"><img src="images/logo.png" alt="Code Shop home"></a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    <a class="navbar-brand light-mode-logo" href="/index.html"><img src="images/logo.png" alt="Code Shop home"></a>
+                    <!-- <toggle class="bi bi-brightness-high-fill" id="toggleDark"></toggle> -->
+                    <button class="navbar-toggler light-mode" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
 
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="collapse navbar-collapse light-mode-nav" id="navbarSupportedContent">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item active">
                                 <a class="nav-link" href="/signIn.html"><i class="fas fa-sign-in-alt"></i> Sign In</a>
@@ -102,7 +105,7 @@
             <!-- Header end -->
 
             <!-- Mack book pro start -->
-
+        <section class="hidden">
             <section id="mack-book">
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
@@ -130,7 +133,7 @@
                                     </a>
                                 </div>
                                 <div class="col-md-6">
-                                    <img src="images/banner-products/iphone.png" alt="" class="img-fluid">
+                                    <img src="images/banner-products/iphone.png" alt="" class="img-fluid hidden">
                                 </div>
                             </div>
                         </div>
@@ -154,7 +157,7 @@
                                     </a>
                                 </div>
                                 <div class="col-md-6">
-                                    <img src="images/banner-products/slider-1.png" alt="" class="img-fluid">
+                                    <img src="images/banner-products/slider-1.png" alt="" class="img-fluid hidden">
                                 </div>
                             </div>
                         </div>
@@ -176,17 +179,18 @@
                                     </a>
                                 </div>
                                 <div class="col-md-6">
-                                    <img src="images/banner-products/smartwatch.png" alt="" class="img-fluid">
+                                    <img src="images/banner-products/smartwatch.png" alt="" class="img-fluid hidden">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </section>
+        </section>
             <!-- End -->
 
             <!-- Smart Phone start -->
+        <section class="hidden">
             <section id="smartphone">
                 <div class="container">
                     <div class="smartphone-header">
@@ -203,7 +207,7 @@
                     </div>
                     <div class="row justify-content-center card-hover align-items-center mx-auto">
                         <div class="col-lg-4 col-md-6 col-sm-12 mb-5 mx-auto ">
-                            <div class="card text-center tab-view" style="width: 18rem;border:none;">
+                            <div class="card text-center tab-view light-mode" style="width: 18rem;border:none;">
                                 <img src="images/phone/phone-2.png" class="card-img-top" alt="image not found">
                                 <div class="card-body">
                                     <h5 class="card-title"><b>iPhone 11 pro</b></h5>
@@ -223,7 +227,7 @@
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-12 mb-5 mx-auto">
-                            <div class="card text-center tab-view" style="width: 18rem;border:none;">
+                            <div class="card text-center tab-view light-mode" style="width: 18rem;border:none;">
                                 <img src="images/phone/phone-3.png" class="card-img-top" alt="image not found">
                                 <div class="card-body">
                                     <h5 class="card-title"><b>Samsung Galaxy Note10+</b></h5>
@@ -244,7 +248,7 @@
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-12 mb-5 mx-auto">
-                            <div class="card text-center tab-view" style="width: 18rem;border:none;">
+                            <div class="card text-center tab-view light-mode" style="width: 18rem;border:none;">
                                 <img src="images/phone/phone-1.png" class="card-img-top" alt="image not found">
                                 <div class="card-body">
                                     <h5 class="card-title"><b>Redmi Note 8</b></h5>
@@ -266,8 +270,10 @@
                     </div>
                 </div>
             </section>
+        </section>
             <!-- End -->
             <!-- Men Tshirts -->
+        <section class="hidden">
             <section id="MenTshirt">
                 <div class="container">
                     <div class="laptop-header">
@@ -284,7 +290,7 @@
                     </div>
                     <div class="row justify-content-center card-hover align-items-center mx-auto">
                         <div class="col-lg-4 col-md-6 col-sm-12 mb-5 mx-auto">
-                            <div class="card text-center" style="width: 18rem;border:none;">
+                            <div class="card text-center light-mode" style="width: 18rem;border:none;">
                                 <img src="images/laptop/react.png" class="card-img-top" alt="image not found">
                                 <div class="card-body">
                                     <h5 class="card-title"><b>ReactJS T-Shirt</b></h5>
@@ -303,7 +309,7 @@
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-12 mb-5 mx-auto">
-                            <div class="card text-center" style="width: 18rem;border:none;">
+                            <div class="card text-center light-mode" style="width: 18rem;border:none;">
                                 <img src="images/laptop/angular.png" class="card-img-top" alt="image not found">
                                 <div class="card-body">
 
@@ -325,7 +331,7 @@
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-12 mb-5 mx-auto">
-                            <div class="card text-center" style="width: 18rem;border:none;">
+                            <div class="card text-center light-mode" style="width: 18rem;border:none;">
                                 <img src="images/laptop/nodejs.png" class="card-img-top" alt="image not found">
                                 <div class="card-body">
                                     <h5 class="card-title"><b>Node Js Tshirt</b></h5>
@@ -350,15 +356,16 @@
                     </div>
                 </div>
             </section>
+        </section>
 
             <!-- Woman Jacket start -->
             <br><br><br><br>
-
+        <section class="hidden">
             <section id="WomanMenTshirt">
                 <div class="container">
                     <div class="laptop-header">
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-6 hideen-2">
 
                                 <h2>Woman Jackets</h2>
 
@@ -370,7 +377,7 @@
                     </div>
                     <div class="row justify-content-center card-hover align-items-center mx-auto">
                         <div class="col-lg-4 col-md-6 col-sm-12 mb-5 mx-auto">
-                            <div class="card text-center" style="width: 18rem;border:none;">
+                            <div class="card text-center light-mode" style="width: 18rem;border:none;">
                                 <img src="images/laptop/public.avif" class="card-img-top" alt="image not found">
                                 <div class="card-body">
                                     <h5 class="card-title"><b>Belted Jacket Beige</b></h5>
@@ -389,7 +396,7 @@
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-12 mb-5 mx-auto">
-                            <div class="card text-center" style="width: 18rem;border:none;">
+                            <div class="card text-center light-mode" style="width: 18rem;border:none;">
                                 <img src="images/laptop/sweater.jpg" class="card-img-top" alt="image not found">
                                 <div class="card-body">
                                     <h5 class="card-title"><b>Ladies "Lydia" Parka</b></h5>
@@ -408,7 +415,7 @@
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-12 mb-5 mx-auto">
-                            <div class="card text-center" style="width: 18rem;border:none;">
+                            <div class="card text-center light-mode" style="width: 18rem;border:none;">
                                 <img src="images/laptop/images.png" class="card-img-top" alt="image not found">
                                 <div class="card-body">
                                     <h5 class="card-title"><b>Black Hooded</b></h5>
@@ -429,9 +436,11 @@
                     </div>
                 </div>
             </section>
+        </section>
 
             <!-- Kids Section -->
             <br><br><br><br>
+        <section class="hidden">
             <section id="Kids">
                 <div class="container">
                     <div class="laptop-header">
@@ -448,7 +457,7 @@
                     </div>
                     <div class="row justify-content-center card-hover align-items-center mx-auto">
                         <div class="col-lg-4 col-md-6 col-sm-12 mb-5 mx-auto">
-                            <div class="card text-center" style="width: 18rem;border:none;">
+                            <div class="card text-center light-mode" style="width: 18rem;border:none;">
                                 <img src="images/laptop/ktshirt.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title"><b>Kid's Solid</b></h5>
@@ -467,7 +476,7 @@
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-12 mb-5 mx-auto">
-                            <div class="card text-center" style="width: 18rem;border:none;">
+                            <div class="card text-center light-mode" style="width: 18rem;border:none;">
                                 <img src="images/laptop/ktshirt2.jpg" class="card-img-top" alt="image not found">
                                 <div class="card-body">
                                     <h5 class="card-title"><b>Kids Striped</b></h5>
@@ -486,7 +495,7 @@
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-12 mb-5 mx-auto">
-                            <div class="card text-center" style="width: 18rem;border:none;">
+                            <div class="card text-center light-mode" style="width: 18rem;border:none;">
                                 <img src="images/laptop/ktshirt3.jpg" class="card-img-top" alt="image not found">
                                 <div class="card-body">
                                     <h5 class="card-title"><b>Kid's Striped</b></h5>
@@ -507,10 +516,12 @@
                     </div>
                 </div>
             </section>
-            <br><br><br><br>
+        </section>
+         <br><br><br><br>
             <!-- End -->
             <a style="text-decoration: none; color: inherit;" title="Go To page" href="./about/About.html">
                 <!--About Us-->
+            <section class="hidden">
                 <section id="About">
                     <div class="container">
                         <div class="laptop-header">
@@ -521,7 +532,7 @@
                             </div>
                         </div>
                         <div class="mx-auto custom-div">
-                            <div class="mx-auto inner-container">
+                            <div class="mx-auto inner-container light-mode">
                                 <div class="custom-content">
                                     <div class="row row-top">
                                         <div class="col-md-7">
@@ -583,13 +594,14 @@
 
                     </div>
                 </section>
+            </section>
 
             </a>
             <!--About Us ends here-->
 
             <br><br><br><br>
             <!-- Categories Start -->
-
+        <section class="hidden">
             <section id="categories">
                 <div class="container">
                     <div class="row text-center">
@@ -600,31 +612,32 @@
                     </div>
                     <div class="row text-center">
                         <div class="col-md-3 mt-5 mb-5">
-                            <div class="categories-card">
+                            <div class="categories-card light-mode-cat">
                                 <img src="images/Categories/bag.png" alt="" class="img-fluid">
                                 <h2>Bag</h2>
                             </div>
                         </div>
                         <div class="col-md-3">
-                            <div class="categories-card mb-5">
+                            <div class="categories-card mb-5 light-mode-cat">
                                 <img src="images/Categories/perfume.png" alt="" class="img-fluid">
                                 <h2>Beauty</h2>
                             </div>
-                            <div class="categories-card mb-5">
+                            <div class="categories-card mb-5 light-mode-cat">
                                 <img src="images/Categories/shoe.png" alt="" class="img-fluid">
                                 <h2>Shoes</h2>
                             </div>
                         </div>
                         <br>
-                        <div class="col-md-6 mb-5">
+                        <div class="col-md-6 mb-5 light-mode-cat">
                             <img src="images/Categories/pale-order.png" alt="" class="img-fluid">
                         </div>
                     </div>
                 </div>
             </section>
+        </section>
             <br><br><br>
             <!--Contact form-->
-            <section class="contact-form" id="contact">
+            <section class="contact-form hidden" id="contact">
                 <div class="container">
                     <div class="laptop-header">
                         <div class="row">
@@ -633,7 +646,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="form-container">
+                    <div class="form-container light-mode-ur-details">
                         <h2>Your Details</h2>
                         <form action="#" method="POST">
 
@@ -668,7 +681,7 @@
 
         </main>
         <!-- Footer start -->
-        <footer>
+        <footer class="light-mode-footer">
             <div class="footer-container">
 
                 <div class="footer-main">
