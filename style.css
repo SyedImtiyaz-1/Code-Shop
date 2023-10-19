@@ -9,6 +9,26 @@ body {
   font-size: large;
   background-color: rgb(255, 239, 239);
 }
+section {
+  display: grid;
+  place-items: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.hidden{
+  opacity: 0;
+  filter: blur(5px);
+  transition: all 1s;
+  transform: translateX(-100%);  
+}
+.show{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+
 
 #preloader {
   position: fixed;
@@ -39,6 +59,49 @@ p {
 
 
 /* Header nav start  */
+
+toggle{
+  font-size: 25px;
+  cursor: pointer;
+  position: fixed;
+  top: 28px;
+  left: 31px;
+  transform: translate(-50%, -50%);
+}
+.light-mode-footer {
+  background-color: rgb(250, 219, 223);
+  color: black;
+}
+
+.light-mode-ur-details {
+  background-color: #aaa;
+  color: #000;
+}
+
+.light-mode-cat{
+background-color: rgb(255,239,239);
+color: #000;
+}
+
+.light-mode{
+  background-color: white;
+  color: #000;
+}
+
+.light-mode-logo {
+  background-color: rgb(255, 239, 239);
+  border-radius: 20px;
+  margin: 10px;
+  
+}
+.light-mode-nav{
+  background-color: #fbe4e4;
+  color: #000;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
 
 a.nav-link {
   margin-right: 20px;

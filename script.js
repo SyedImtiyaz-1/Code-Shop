@@ -30,21 +30,35 @@ function scrollFunction() {
 function topFunction() {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-  }
-//FAQS
-  // select all accordion items
-const accItems = document.querySelectorAll(".accordion__item");
+  } 
+// Intersection Observer for showing and hiding elements
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    } else {
+      entry.target.classList.remove('show');
+    }
+  });
+});
 
-// add a click event for all items
-accItems.forEach((acc) => acc.addEventListener("click", toggleAcc));
+// Select all elements with the class "hidden"
+const hiddenElements = document.querySelectorAll('.hidden');
+hiddenElements.forEach((element) => observer.observe(element));
 
-function toggleAcc() {
-  // remove active class from all items exept the current item (this)
-  accItems.forEach((item) => item != this ? item.classList.remove("accordion__item--active") : null
-  );
+const toggle = document.getElementById('toggleDark');
+const body = document.querySelector('body');
 
-  // toggle active class on current item
-  if (this.classList != "accordion__item--active") {
-    this.classList.toggle("accordion__item--active");
-  }
-}
+toggle.addEventListener('click', function(){
+    this.classList.toggle('bi-moon');
+    if(this.classList.toggle('bi-brightness-high-fill')){
+        body.style.background = 'rgb(255,239,239)';
+        body.style.color = 'black';
+        body.style.transition = '2s';
+    }else{
+        body.style.background = 'black';
+        body.style.color = 'white';
+        body.style.transition = '2s';
+    }
+});
+
