@@ -61,3 +61,11 @@ toggle.addEventListener('click', function(){
         body.style.transition = '2s';
     }
 });
+const clearButton = document.querySelector('.clear-button');
+const inputField = document.querySelector('#my-input-field');
+
+clearButton.addEventListener('click', () => {
+  // Clear the input field
+  inputField.value = '';
+});
+    

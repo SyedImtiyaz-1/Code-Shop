@@ -8,6 +8,7 @@ body {
   font-family: "Abel", sans-serif;
   font-size: large;
   background-color: rgb(255, 239, 239);
+  display: flex;
 }
 section {
   display: grid;
@@ -100,6 +101,81 @@ color: #000;
   margin: 10px;
   padding: 10px;
   border-radius: 10px;
+}
+
+.search-box {
+  height: 54px;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background: #fff;
+  border-radius: 50px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  position: relative;
+}
+
+.search-input {
+  width: 100%;
+  height: 100%;
+  margin:10px 24px;
+  outline: none;
+  border: 1px solid #ccc;
+  font-size: 20px;
+  font-weight: 500;
+  transition: width 0.8s;
+  background: transparent;
+  position: relative;
+}
+
+.placeholder-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  opacity: 1;
+}
+
+.placeholder-box::after {
+  content: attr(placeholder);
+  color: #ccc;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.search-button,
+.clear-button {
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.search-button {
+  position: absolute;
+  top: 50%;
+  left: 17px;
+  transform: translateY(-50%);
+}
+
+.search-button .fas {
+  color: rgb(161, 9, 118);
+  font-size: 18px;
+}
+
+.clear-button{
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  border-radius: 5px;
+}
+
+.clear-button .fas {
+  color: #ccc;
+  font-size: 16px;
 }
 
 
