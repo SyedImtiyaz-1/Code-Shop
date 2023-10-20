@@ -61,7 +61,7 @@ toggle.addEventListener('click', function(){
         body.style.transition = '2s';
     }
 });
-<<<<<<< HEAD
+
 const clearButton = document.querySelector('.clear-button');
 const inputField = document.querySelector('#my-input-field');
 
@@ -69,7 +69,21 @@ clearButton.addEventListener('click', () => {
   // Clear the input field
   inputField.value = '';
 });
-    
-=======
+const accordionItems = document.querySelectorAll('.accordion__item');
 
->>>>>>> 0f665d929a36a069a2b8ae8443467b3af7ef8f4f
+accordionItems.forEach((item) => {
+  const btn = item.querySelector('.accordion__btn');
+  const content = item.querySelector('.accordion__content');
+
+  btn.addEventListener('click', () => {
+    item.classList.toggle('accordion__item--active');
+
+    // Toggle the visibility of the content
+    if (item.classList.contains('accordion__item--active')) {
+      content.style.maxHeight = content.scrollHeight + 'px';
+    } else {
+      content.style.maxHeight = '0';
+    }
+  });
+});
+
