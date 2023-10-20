@@ -69,4 +69,21 @@ clearButton.addEventListener('click', () => {
   // Clear the input field
   inputField.value = '';
 });
-    
+
+const accordionItems = document.querySelectorAll('.accordion__item');
+
+accordionItems.forEach((item) => {
+  const btn = item.querySelector('.accordion__btn');
+  const content = item.querySelector('.accordion__content');
+
+  btn.addEventListener('click', () => {
+    item.classList.toggle('accordion__item--active');
+
+    // Toggle the visibility of the content
+    if (item.classList.contains('accordion__item--active')) {
+      content.style.maxHeight = content.scrollHeight + 'px';
+    } else {
+      content.style.maxHeight = '0';
+    }
+  });
+});

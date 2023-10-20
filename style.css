@@ -9,6 +9,10 @@ body {
   font-size: large;
   background-color: rgb(255, 239, 239);
   display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+  
 }
 section {
   display: grid;
@@ -82,6 +86,7 @@ toggle{
 .light-mode-cat{
 background-color: rgb(255,239,239);
 color: #000;
+
 }
 
 .light-mode{
@@ -465,7 +470,8 @@ footer {
   }
 }
 
-.contact-form {
+.contact-form,
+.faq-form {
   padding: 40px 0;
   margin: 0 10px;
 }
@@ -546,6 +552,7 @@ textarea {
 
 footer{
     padding: 0;
+    width: 100%;
     position:relative;
     margin: auto;
     border: 2px solid rgb(228, 223, 223);
@@ -836,14 +843,17 @@ textarea {
 }
 
 /*FAQS*/
-.faq {
-  padding-bottom: 20px;
+.faq-container {
+  padding-bottom: 2px;
   display: grid;
   place-items: center;
   overflow: hidden;
-  min-height: 100vh;
 }
 
+.faq-cont{
+  padding: 30px;
+
+}
 .faq_heading {
   padding-top: 5rem;
   color:black;
@@ -869,7 +879,7 @@ textarea {
 }
 
 .accordion__item:not(:last-child) {
-  border-bottom: 1px solid lightgrey;
+  border-bottom: 1px solid rgb(232, 227, 227);
 }
 
 .accordion__btn {
@@ -902,7 +912,7 @@ textarea {
   font-weight: 700;
 }
 
-.fa-lightbulb {
+.accordion__btn .fa-lightbulb {
   padding-right: 1rem;
 }
 
@@ -927,10 +937,12 @@ textarea {
   transition: max-height 0.5s ease, opacity 0.5s, transform 0.5s;
 }
 .accordion__content .email{
-  color:  #ffff00;
+  color:  #1143c1;
 }
 .accordion__content p {
-  padding: 1rem 1.8rem;
+  padding: 1rem 1rem;
+  color: #000;
+  background-color: #c0d9f4;
 }
 
 .accordion__item--active .accordion__content {
