@@ -69,6 +69,7 @@ clearButton.addEventListener('click', () => {
   // Clear the input field
   inputField.value = '';
 });
+
 const accordionItems = document.querySelectorAll('.accordion__item');
 
 accordionItems.forEach((item) => {
@@ -86,4 +87,3 @@ accordionItems.forEach((item) => {
     }
   });
 });
-
