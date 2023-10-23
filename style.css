@@ -698,31 +698,52 @@ footer a:hover{
 .footer-lower-item2{
     width: 50%;
 }
-.payment-logos{
-    padding-left: 1.5em;
-    padding-right: 7.5em;
-    display: flex;
-    justify-content: space-evenly;
+.payment-logos {
+  padding-left: 1.5em;
+  padding-right: 7.5em;
+  display: flex;
+  justify-content: space-evenly;
 }
-@media (min-width:765px) and (max-width:1000px){
-    .footer-lower-item1{
-        width: 47%;
-    }
-    .payment-logos{
-        padding-right: 2.5em;
-    }
-    #payment-logos5 , #payment-logos6 , #payment-logos7 {
-        display: none;
-    }
+
+/* Reduce the space between icons for smaller screens */
+.payment-logos iconify-icon {
+  margin: 0 10px; /* Adjust the margin for smaller screens */
 }
-@media (max-width:765px) {
-    .footer-lower-item2{
-        display: none;
-    }
-    .footer-lower-item1{
-        width: 80%;
-    }
+
+@media (min-width: 765px) and (max-width: 1000px) {
+  .footer-lower-item1 {
+      width: 47%;
+  }
+  .payment-logos {
+      padding-right: 2.5em;
+  }
+  #payment-logos5, #payment-logos6, #payment-logos7 {
+      display: none;
+  }
 }
+
+@media (max-width: 765px) {
+  .footer-lower-item2 {
+      display: none;
+  }
+  .footer-lower-item1 {
+      width: 80%;
+  }
+
+  /* Adjust spacing for smaller screens */
+  .payment-logos {
+      padding-left: 1em;
+      padding-right: 1em;
+      justify-content: space-between;
+  }
+
+  /* Further reduce the space between icons for smaller screens */
+  .payment-logos iconify-icon {
+      margin: 0 5px; /* Adjust the margin for smaller screens */
+  }
+}
+
+
 /* footer lower styling ends */
 
 /* About Us section's styles start here */
@@ -796,15 +817,13 @@ footer a:hover{
 /* About Us section's styles ends here */
 
 .form-container {
-  background-color: #f9f9f9;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  max-width: 100%;
+  max-width: 200%; /* Increase the max-width to your desired value, e.g., 75% */
   margin: 0 auto;
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 30px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
-
-
 .styled-form {
   display: flex;
   flex-direction: column;
