@@ -477,7 +477,8 @@ footer {
 }
 
 .form-container {
-    max-width: 55%;
+    /* max-width: 55%; */
+    width: 20vw;
     margin: 0 auto;
     padding: 20px;
     background-color: #ffffff;
